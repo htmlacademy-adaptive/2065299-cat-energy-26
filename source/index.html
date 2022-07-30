@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header page__container">
+      <a class="main-header__logo">
+        <img
+          class="main-header__logo-img"
+          src=""
+          width="34"
+          height="38"
+          alt="Логотип магазина питания для котов."
+        />
+        <img
+          class="main-header__logo-caption logo-caption"
+          src=""
+          width="101"
+          height="18"
+          alt="Кэт энерджи."
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Подобрать программу</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__container">
+      <section class="program-select">
+        <h1 class="program-select__title">Функциональное питание для котов</h1>
+        <h2 class="visually-hidden">Подбор программы питания</h2>
+        <p class="product-select__involve">Занялся собой? Займись котом!</p>
+        <a class="product-select__button button" href="">Подобрать программу</a>
+        <ul class="program-select__list">
+          <li class="product-select__item product-item"></li>
+          <li class="product-select__item product-item"></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
