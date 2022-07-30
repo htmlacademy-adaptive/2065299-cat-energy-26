@@ -6,17 +6,21 @@
   </head>
   <body class="page__body">
     <header class="main-header page__container">
-      <a class="main-header__logo">
+      <a class="main-header__logo-link main-header__logo-link-img">
         <img
-          class="main-header__logo-img"
-          src=""
+          class="main-header__logo"
+          src="img/logo/logo-cat.svg"
           width="34"
           height="38"
           alt="Логотип магазина питания для котов."
         />
+      </a>
+      <a
+        class="main-header__logo-link main-header__logo-link-caption logo-link-caption"
+      >
         <img
-          class="main-header__logo-caption logo-caption"
-          src=""
+          class="main-header__logo logo-link-caption__img"
+          src="img/logo/logo-cat-caption.svg"
           width="101"
           height="18"
           alt="Кэт энерджи."
@@ -27,11 +31,11 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a href="#">Подобрать программу</a>
@@ -39,15 +43,56 @@
         </ul>
       </nav>
     </header>
-    <main class="page__container">
+    <main>
       <section class="program-select">
-        <h1 class="program-select__title">Функциональное питание для котов</h1>
-        <h2 class="visually-hidden">Подбор программы питания</h2>
-        <p class="product-select__involve">Занялся собой? Займись котом!</p>
-        <a class="product-select__button button" href="">Подобрать программу</a>
-        <ul class="program-select__list">
+        <h1 class="visually-hidden">
+          Магазин функционального питания для котов Кэт энерджи
+        </h1>
+        <div class="program-select__wrap">
+          <h2 class="program-select__title section-title">
+            Функциональное питание для котов
+          </h2>
+          <p class="product-select__slogan">Занялся собой? Займись котом!</p>
+          <a class="product-select__button button" href=""
+            >Подобрать программу</a
+          >
+        </div>
+        <ul class="program-select__list page__container">
           <li class="product-select__item product-item"></li>
           <li class="product-select__item product-item"></li>
+        </ul>
+      </section>
+      <section class="advantages page__container">
+        <h2 class="advantages__title section-title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__description advantages__description--useful">
+              Функциональное питание содержит только полезные питательные
+              вещества.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__description advantages__description--easy">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p
+              class="advantages__description advantages__description--meal-count"
+            >
+              Замените один-два приемаобычной еды на наше функциональное
+              питание.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p
+              class="advantages__description advantages__description--deadlines"
+            >
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
+            </p>
+          </li>
         </ul>
       </section>
     </main>
