@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header page__container">
+    <header class="main-header">
       <a class="main-header__logo-link">
         <img
           class="main-header__logo-img"
@@ -36,7 +36,7 @@
     </header>
     <main class="main-form">
       <section class="main-form__program-select program-select">
-        <h1 class="program-select__title">Подбор программы</h1>
+        <h1 class="program-select__title title">Подбор программы</h1>
         <p class="program-select__description">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
@@ -117,7 +117,6 @@
                 type="email"
                 name="owner-mail"
                 placeholder="kuklachev@gmail.com"
-                checked
             /></label>
             <label class="program-select__form-control"
               >Телефон:*<input
@@ -125,19 +124,18 @@
                 type="tel"
                 name="owner-phone"
                 placeholder="8 (960) 900-60-90"
-                checked
             /></label>
           </fieldset>
-          <fieldset class="program-select__form-group">
-            <legend class="program-select__form-group-title">
+          <div class="program-select__form-group">
+            <label class="program-select__form-group-title">
               Комментарий
-            </legend>
-            <textarea
-              class="program-select__info-input program-select__info-input--comment"
-              placeholder="Расскажите обо всех повАдках кота"
-              name="comment"
-            ></textarea>
-          </fieldset>
+              <textarea
+                class="program-select__info-input program-select__info-input--comment"
+                placeholder="Расскажите обо всех повАдках кота"
+                name="comment"
+              ></textarea>
+            </label>
+          </div>
           <fieldset class="program-select__form-group">
             <legend class="program-select__form-group-title">
               Дополнительно
