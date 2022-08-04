@@ -1,0 +1,19 @@
+.product-card__link-img {
+  display: block;
+}
+
+.product-card__link-title {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  display: block;
+}
+
+.product-card__description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
