@@ -1,6 +1,6 @@
 .button {
   @include oswald-reg;
-  display: block;
+  display: inline-block;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -9,5 +9,9 @@
   background-color: rgb(104, 183, 56);
   padding: 14px 26px;
   border: none;
-  width: fit-content;
+
+  &--show-all {
+    background-color: rgb(242, 242, 242);
+    color: rgb(68, 68, 68);
+  }
 }
