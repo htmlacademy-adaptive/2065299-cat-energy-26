@@ -1,0 +1,14 @@
+.show-all-card__offer {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 1);
+  margin: 0;
+}
+
+.show-all-card__offer-count {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}

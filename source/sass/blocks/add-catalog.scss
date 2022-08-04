@@ -1,0 +1,22 @@
+.add-catalog__title {
+  @include oswald-reg;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.add-catalog__list {
+  @include list-style;
+}
+
+// .add-catallog__stock {
+
+// }
+
+.add-catalog__stock-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
