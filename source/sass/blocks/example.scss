@@ -1,0 +1,45 @@
+.example {
+  background-color: rgb(234, 234, 234);
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__title {
+  @include oswald-reg;
+  font-size: 36px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__results {
+  margin-bottom: 20px;
+}
+
+.example__number {
+  @include oswald-reg;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.example__results-description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost {
+  @include oswald-reg;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
