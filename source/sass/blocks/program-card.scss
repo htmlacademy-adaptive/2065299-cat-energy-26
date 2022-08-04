@@ -1,0 +1,27 @@
+.program-card {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.program-card__title {
+  @include oswald-reg;
+  font-size: 20px;
+  line-height: 37px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.program-card__description {
+  margin: 0;
+}
+
+.program-card__link {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  padding: 4px 49px 4px 0;
+}
