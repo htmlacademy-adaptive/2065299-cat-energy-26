@@ -1,5 +1,5 @@
 .example {
-  background-color: rgb(234, 234, 234);
+  background-color: #eaeaea;
   padding-top: 25px;
   padding-bottom: 40px;
 }
@@ -8,7 +8,7 @@
   @include oswald-reg;
   font-size: 36px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -26,7 +26,7 @@
   @include oswald-reg;
   font-size: 24px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -39,7 +39,7 @@
   @include oswald-reg;
   font-size: 14px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
