@@ -10,9 +10,13 @@
   @include list-style;
 }
 
-// .add-catallog__stock {
+.add-catalog__stock {
+  background-image: url("../img/background/cat-case.jpg");
+}
 
-// }
+.add-catalog__stock-wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+}
 
 .add-catalog__stock-description {
   font-size: 16px;
