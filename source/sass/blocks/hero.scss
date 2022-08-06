@@ -1,10 +1,11 @@
 .hero {
-  background-image: url("../img/background/barsik.jpg");
+  background-image: linear-gradient(
+    hsl(97 53% 47% / 85%),
+    hsl(97 53% 47% / 85%)
+  ),
+    url("../img/background/barsik.jpg");
   background-repeat: no-repeat;
-}
-
-.hero__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-size: 100% 63%;
 }
 
 .hero__title {
