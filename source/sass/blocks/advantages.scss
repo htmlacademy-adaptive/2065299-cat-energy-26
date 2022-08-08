@@ -1,0 +1,12 @@
+.advantages__title {
+  @include oswald-reg;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  @include list-style;
+}

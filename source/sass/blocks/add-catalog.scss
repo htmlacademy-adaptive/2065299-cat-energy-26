@@ -1,0 +1,26 @@
+.add-catalog__title {
+  @include oswald-reg;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.add-catalog__list {
+  @include list-style;
+}
+
+.add-catalog__stock {
+  background-image: url("../img/background/cat-case.jpg");
+}
+
+.add-catalog__stock-wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.add-catalog__stock-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}

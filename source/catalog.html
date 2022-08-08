@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-link">
-        <img
-          class="main-header__logo-img"
-          src="img/logo/logo.svg"
-          width="191"
-          height="38"
-          alt="Логотип магазина питания для котов."
-        />
-      </a>
-      <nav class="main-header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo-link">
+          <img
+            class="main-header__logo-img"
+            src="img/logo/logo.svg"
+            width="191"
+            height="38"
+            alt="Логотип магазина питания для котов."
+          />
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -36,9 +39,7 @@
     </header>
     <main class="main-catalog">
       <h1 class="main-catalog__title title">Каталог продукции</h1>
-      <section
-        class="main-catalog__basic-catalog basic-catalog page__container"
-      >
+      <section class="main-catalog__basic-catalog basic-catalog container">
         <h2 class="visually-hidden">Основные товары</h2>
         <div class="basic-catalog__list">
           <article class="basic-catalog__item product-card">
@@ -243,14 +244,28 @@
           </li>
         </ul>
         <div class="add-catalog__stock">
-          <p class="add-catalog__stock-description">
-            Закажите все и получите чехол для кота в подарок!
-          </p>
+          <div class="add-catalog__stock-wrapper">
+            <p class="add-catalog__stock-description">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
+      </section>
+      <section class="main-catalog__contacts contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper container">
+          <p class="contacts__deals-offer">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map map"></div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper page-container">
+      <div class="main-footer__wrapper container">
         <a class="main-footer__logo-link">
           <img
             class="main-footer__logo-caption"
@@ -265,21 +280,21 @@
             <a
               class="social__link social__link--vkontakte"
               href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
+              ><span class="visually-hidden">Мы в Вконтакте</span></a
             >
           </li>
           <li class="social__item">
             <a
               class="social__link social__link--youtube"
               href="https://www.youtube.com/user/htmlacademyru"
-              >Мы в Ютубе</a
+              ><span class="visually-hidden">Мы в Ютубе</span></a
             >
           </li>
           <li class="social__item">
             <a
               class="social__link social__link--telegram"
               href="https://t.me/htmlacademy"
-              >Мы в Телеграме</a
+              ><span class="visually-hidden">Мы в Телеграме</span></a
             >
           </li>
         </ul>

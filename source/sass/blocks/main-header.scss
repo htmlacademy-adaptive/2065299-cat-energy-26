@@ -1,0 +1,20 @@
+.main-header {
+  padding: 10px 0 18px;
+}
+
+.main-header__logo-link {
+  display: block;
+}
+
+.main-nav__list {
+  @include list-style;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  display: inline-block;
+}

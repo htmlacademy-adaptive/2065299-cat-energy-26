@@ -1,0 +1,12 @@
+.add-product__title {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+}
+
+.add-product__descriptio {
+  line-height: 20px;
+}

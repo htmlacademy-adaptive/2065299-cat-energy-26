@@ -1,0 +1,11 @@
+.cat-slider__img {
+  display: block;
+}
+
+.cat-slider__caption {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
