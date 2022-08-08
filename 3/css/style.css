@@ -39,18 +39,20 @@ img {
 }
 
 .page__body {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0;
   height: 100%;
 }
 
-.page__container {
+.container {
   margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
 }
 
 .main-header {
@@ -71,7 +73,7 @@ img {
 
 .main-nav__link {
   text-decoration: none;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -84,14 +86,14 @@ img {
   margin-bottom: 20px;
 }
 
-.hero {
-  background-color: white;
-  background-image: url("../img/background/barsik.jpg");
-  background-repeat: no-repeat;
+.main-index__advantages {
+  margin-bottom: 49px;
 }
 
-.hero__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+.hero {
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/background/barsik.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 63%;
 }
 
 .hero__title {
@@ -100,17 +102,16 @@ img {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   margin: 0;
 }
 
 .hero__slogan {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -126,7 +127,7 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   background-color: #68b738;
   padding: 14px 26px;
   border: none;
@@ -149,9 +150,9 @@ img {
 .program-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 37px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   margin: 0;
 }
@@ -167,7 +168,7 @@ img {
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #000000;
   display: block;
   padding: 4px 49px 4px 0;
 }
@@ -177,7 +178,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: black;
+  color: #000000;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -186,7 +187,6 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 49px;
 }
 
 .example {
@@ -200,7 +200,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: black;
+  color: #000000;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -219,7 +219,7 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -231,9 +231,8 @@ img {
 .example__cost {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 20px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -247,7 +246,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -294,7 +293,6 @@ img {
   color: #444444;
   display: inline-block;
   font-size: 16px;
-  line-height: 18px;
 }
 
 .copyrate__logo-link {
@@ -306,7 +304,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: black;
+  color: #000000;
   margin: 0;
 }
 
@@ -364,7 +362,7 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: black;
+  color: #000000;
   margin: 0;
 }
 
@@ -385,7 +383,7 @@ img {
 .add-catalog__stock-description {
   font-size: 16px;
   line-height: 20px;
-  color: white;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -431,15 +429,7 @@ img {
   color: #222222;
 }
 .program-select__form-control--checkbox {
-  color: black;
-}
-
-input::placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #444444;
+  color: #000000;
 }
 
 .program-select__form-group-title {
@@ -447,7 +437,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  color: black;
+  color: #000000;
 }
 
 .program-select__form-hint {
@@ -460,13 +450,27 @@ input::placeholder {
   list-style-type: none;
 }
 
+.program-select__info-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+.program-select__info-input::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
 .program-select__info-input--comment {
   resize: none;
 }
 .program-select__info-input--comment::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   text-transform: uppercase;
   color: #444444;
 }

@@ -8,19 +8,21 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-link">
-        <img
-          class="main-header__logo-img"
-          src="img/logo/logo.svg"
-          width="191"
-          height="38"
-          alt="Логотип магазина питания для котов."
-        />
-      </a>
-      <nav class="main-header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo-link">
+          <img
+            class="main-header__logo-img"
+            src="img/logo/logo.svg"
+            width="191"
+            height="38"
+            alt="Логотип магазина питания для котов."
+          />
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -38,9 +40,7 @@
     </header>
     <main class="main-catalog">
       <h1 class="main-catalog__title title">Каталог продукции</h1>
-      <section
-        class="main-catalog__basic-catalog basic-catalog page__container"
-      >
+      <section class="main-catalog__basic-catalog basic-catalog container">
         <h2 class="visually-hidden">Основные товары</h2>
         <div class="basic-catalog__list">
           <article class="basic-catalog__item product-card">
@@ -254,7 +254,7 @@
       </section>
       <section class="main-catalog__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper page__container">
+        <div class="contacts__wrapper container">
           <p class="contacts__deals-offer">
             приглашаем к сотрудничеству дилеров!
           </p>
@@ -266,7 +266,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper page-container">
+      <div class="main-footer__wrapper container">
         <a class="main-footer__logo-link">
           <img
             class="main-footer__logo-caption"
