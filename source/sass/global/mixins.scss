@@ -1,0 +1,10 @@
+@mixin oswald-reg {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
