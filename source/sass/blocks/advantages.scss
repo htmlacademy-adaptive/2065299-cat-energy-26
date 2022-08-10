@@ -9,4 +9,6 @@
 
 .advantages__list {
   @include list-style;
+  display: grid;
+  gap: 20px;
 }
