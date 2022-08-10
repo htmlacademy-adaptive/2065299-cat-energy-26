@@ -20,6 +20,15 @@
 
 .example__results {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .example__results-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__number {
@@ -41,4 +50,11 @@
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
