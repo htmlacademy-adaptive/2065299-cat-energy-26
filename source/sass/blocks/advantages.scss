@@ -11,4 +11,14 @@
   @include list-style;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 247px 247px;
+    gap: 37px 136px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 247px 247px 247px 247px;
+    gap: 77px;
+  }
 }
