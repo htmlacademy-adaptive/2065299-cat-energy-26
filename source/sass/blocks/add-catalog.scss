@@ -10,16 +10,20 @@
   @include list-style;
 }
 
-// .add-catalog__stock {
-//   background-image: url("../img/background/cat-case.jpg");
-// }
+@media (min-width: $desktop-width) {
+  .add-catalog__wrapper {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 80px;
+  }
+}
 
-.add-catalog__stock-wrapper {
+.add-catalog__stock {
   background-image: linear-gradient(
     hsl(97 53% 47% / 85%),
     hsl(97 53% 47% / 85%)
   ),
-      url("../img/background/cat-case.jpg");
+    url("../img/background/cat-case.jpg");
 }
 
 .add-catalog__stock-description {
