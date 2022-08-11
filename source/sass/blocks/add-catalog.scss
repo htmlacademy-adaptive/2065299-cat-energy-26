@@ -10,14 +10,6 @@
   @include list-style;
 }
 
-@media (min-width: $desktop-width) {
-  .add-catalog__wrapper {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    gap: 80px;
-  }
-}
-
 .add-catalog__stock {
   background-image: linear-gradient(
     hsl(97 53% 47% / 85%),
@@ -31,4 +23,12 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog__wrapper {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 80px;
+  }
 }
