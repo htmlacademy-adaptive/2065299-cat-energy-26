@@ -10,12 +10,16 @@
   @include list-style;
 }
 
-.add-catalog__stock {
-  background-image: url("../img/background/cat-case.jpg");
-}
+// .add-catalog__stock {
+//   background-image: url("../img/background/cat-case.jpg");
+// }
 
 .add-catalog__stock-wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(
+    hsl(97 53% 47% / 85%),
+    hsl(97 53% 47% / 85%)
+  ),
+      url("../img/background/cat-case.jpg");
 }
 
 .add-catalog__stock-description {

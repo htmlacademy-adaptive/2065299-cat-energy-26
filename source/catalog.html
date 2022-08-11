@@ -39,7 +39,7 @@
       </nav>
     </header>
     <main class="main-catalog">
-      <h1 class="main-catalog__title title">Каталог продукции</h1>
+      <h1 class="main-catalog__title title container">Каталог продукции</h1>
       <section class="main-catalog__basic-catalog basic-catalog container">
         <h2 class="visually-hidden">Основные товары</h2>
         <div class="basic-catalog__list">
@@ -210,41 +210,43 @@
       </section>
       <section class="main-catalog__add-catalog add-catalog">
         <h2 class="add-catalog__title">Дополнительные товары</h2>
-        <ul class="add-catalog__list">
-          <li class="add-catalog__item add-product">
-            <h3 class="add-product__title">Сахарозаменитель</h3>
-            <dl class="add-product__description">
-              <dt class="add-product__count">1 упаковка (100 г)</dt>
-              <dd class="add-product__price">200 Р.</dd>
-            </dl>
-            <a class="add-product__button button" href="#">Заказать</a>
-          </li>
-          <li class="add-catalog__item add-product">
-            <h3 class="add-product__title">питьевая вода</h3>
-            <dl class="add-product__description">
-              <dt class="add-product__count">5 литров</dt>
-              <dd class="add-product__price">50 Р.</dd>
-            </dl>
-            <a class="add-product__button button" href="#">Заказать</a>
-          </li>
-          <li class="add-catalog__item add-product">
-            <h3 class="add-product__title">молоко</h3>
-            <dl class="add-product__description">
-              <dt class="add-product__count">1 литр</dt>
-              <dd class="add-product__price">100 Р.</dd>
-            </dl>
-            <a class="add-product__button button" href="#">Заказать</a>
-          </li>
-          <li class="add-catalog__item add-product">
-            <h3 class="add-product__title">витамины</h3>
-            <dl class="add-product__description">
-              <dt class="add-product__count">1 упаковка (30 г)</dt>
-              <dd class="add-product__price">300 Р.</dd>
-            </dl>
-            <a class="add-product__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="add-catalog__stock">
+        <div class="add-catalog__wrapper container">
+          <ul class="add-catalog__list">
+            <li class="add-catalog__item add-product">
+              <h3 class="add-product__title">Сахарозаменитель</h3>
+              <dl class="add-product__description">
+                <dt class="add-product__count">1 упаковка (100 г)</dt>
+                <dd class="add-product__price">200 Р.</dd>
+              </dl>
+              <a class="add-product__button button" href="#">Заказать</a>
+            </li>
+            <li class="add-catalog__item add-product">
+              <h3 class="add-product__title">питьевая вода</h3>
+              <dl class="add-product__description">
+                <dt class="add-product__count">5 литров</dt>
+                <dd class="add-product__price">50 Р.</dd>
+              </dl>
+              <a class="add-product__button button" href="#">Заказать</a>
+            </li>
+            <li class="add-catalog__item add-product">
+              <h3 class="add-product__title">молоко</h3>
+              <dl class="add-product__description">
+                <dt class="add-product__count">1 литр</dt>
+                <dd class="add-product__price">100 Р.</dd>
+              </dl>
+              <a class="add-product__button button" href="#">Заказать</a>
+            </li>
+            <li class="add-catalog__item add-product">
+              <h3 class="add-product__title">витамины</h3>
+              <dl class="add-product__description">
+                <dt class="add-product__count">1 упаковка (30 г)</dt>
+                <dd class="add-product__price">300 Р.</dd>
+              </dl>
+              <a class="add-product__button button" href="#">Заказать</a>
+            </li>
+          </ul>
+        </div>
+        <div class="add-catalog__stock container">
           <div class="add-catalog__stock-wrapper">
             <p class="add-catalog__stock-description">
               Закажите все и получите чехол для кота в подарок!

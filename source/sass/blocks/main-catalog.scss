@@ -6,3 +6,18 @@
 .main-catalog__contacts {
   background-color: #f2f2f2;
 }
+
+.basic-catalog__list {
+  display: grid;
+  gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+    gap: 139px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 143px 80px;
+  }
+}
