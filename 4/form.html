@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <base href="https://htmlacademy-adaptive.github.io/2065299-cat-energy-26/4/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo-link">
+          <img
+            class="main-header__logo-img"
+            src="img/logo/logo.svg"
+            width="191"
+            height="38"
+            alt="Логотип магазина питания для котов."
+          />
+        </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--active"
+              >Подобрать программу</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-form">
+      <section class="main-form__program-select program-select">
+        <h1 class="program-select__title title">Подбор программы</h1>
+        <p class="program-select__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <form
+          class="program-select__form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
+          <fieldset class="program-select__form-group">
+            <legend class="visually-hidden">Данные кота</legend>
+            <label class="program-select__form-control"
+              >Имя:*<input
+                class="program-select__info-input"
+                type="text"
+                name="cat-name"
+                placeholder="Барсик"
+                required<input
+            /></label>
+            <label class="program-select__form-control"
+              >Вес (кг):*<input
+                class="program-select__info-input"
+                type="text"
+                name="cat-weight"
+                placeholder="7"
+                required<input
+            /></label>
+            <label class="program-select__form-control"
+              >Возраст (лет):<input
+                class="program-select__info-input"
+                type="text"
+                name="cat-age"
+                placeholder="7"
+                <input
+            /></label>
+          </fieldset>
+          <fieldset class="program-select__form-group">
+            <legend class="visually-hidden">Цель программы</legend>
+            <ul class="program-select__filter-list">
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--radio"
+                  ><input
+                    class="program-select__filter-input"
+                    type="radio"
+                    name="program-purpose"
+                    value="weight-lost"
+                  />Похудение</label
+                >
+              </li>
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--radio"
+                  ><input
+                    class="program-select__filter-input"
+                    type="radio"
+                    name="program-purpose"
+                    value="weight-gain"
+                  />Набор массы</label
+                >
+              </li>
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--radio"
+                  ><input
+                    class="program-select__filter-input"
+                    type="radio"
+                    name="program-purpose"
+                    value="need-advaice"
+                  />Не знаю (Нужен ваш совет)</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-select__form-group">
+            <legend class="program-select__form-group-title">
+              Контактные данные (владельца кота)
+            </legend>
+            <label class="program-select__form-control"
+              >E-mail:*<input
+                class="program-select__info-input program-select__info-input--mail"
+                type="email"
+                name="owner-mail"
+                placeholder="kuklachev@gmail.com"
+            /></label>
+            <label class="program-select__form-control"
+              >Телефон:*<input
+                class="program-select__info-input program-select__info-input--phone"
+                type="tel"
+                name="owner-phone"
+                placeholder="8 (960) 900-60-90"
+            /></label>
+          </fieldset>
+          <div class="program-select__form-group">
+            <label class="program-select__form-group-title">
+              Комментарий
+              <textarea
+                class="program-select__info-input program-select__info-input--comment"
+                placeholder="Расскажите обо всех повАдках кота"
+                name="comment"
+              ></textarea>
+            </label>
+          </div>
+          <fieldset class="program-select__form-group">
+            <legend class="program-select__form-group-title">
+              Дополнительно
+            </legend>
+            <ul class="program-select__filter-list">
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--checkbox"
+                  ><input
+                    class="program-select__filter-input"
+                    type="checkbox"
+                    name="fake-sugar"
+                    checked
+                  />сахарозаменитель</label
+                >
+              </li>
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--checkbox"
+                  ><input
+                    class="program-select__filter-input"
+                    type="checkbox"
+                    name="water"
+                  />питьевая вода</label
+                >
+              </li>
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--checkbox"
+                  ><input
+                    class="program-select__filter-input"
+                    type="checkbox"
+                    name="milk"
+                  />молоко</label
+                >
+              </li>
+              <li class="program-select__filter-item">
+                <label
+                  class="program-select__form-control program-select__form-control--checkbox"
+                  ><input
+                    class="program-select__filter-input"
+                    type="checkbox"
+                    name="vitamins"
+                  />витамины</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <button class="program-select__button button" type="submit">
+            отправить заявку
+          </button>
+          <p class="program-select__form-hint">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="main-form__contacts contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper container">
+          <p class="contacts__deals-offer">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map map"></div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper container">
+        <a class="main-footer__logo-link">
+          <img
+            class="main-footer__logo-caption"
+            src="img/logo/logo-cat-caption.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи."
+          />
+        </a>
+        <ul class="main-footer__social-list social">
+          <li class="social__item">
+            <a
+              class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+              ><span class="visually-hidden">Мы в Вконтакте</span></a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru"
+              ><span class="visually-hidden">Мы в Ютубе</span></a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--telegram"
+              href="https://t.me/htmlacademy"
+              ><span class="visually-hidden">Мы в Телеграме</span></a
+            >
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy</a
+          >
+          <a
+            class="copyright__logo-link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <img
+              class="copyright__logo-img"
+              src="img/htmlacademy.svg"
+              width="27"
+              height="34"
+              alt="Лого HTML Academy."
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
