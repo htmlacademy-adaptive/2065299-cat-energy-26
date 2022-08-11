@@ -20,6 +20,7 @@
 
 .main-header__logo-wrapper {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   padding: 10px 0 18px;
 

@@ -1,43 +1,30 @@
 .hero {
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 63%;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  @media (max-width: $mobile-width-only) {
     background-image: linear-gradient(
-    hsl(97 53% 47% / 85%),
-    hsl(97 53% 47% / 85%)
-  ),
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+),
       url("../img/background/barsik.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 63%;
   }
+}
+
+.hero__wrapper {
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    &::after {
-      width: 0;
-      height: 0;
-    }
-
-    padding-left: 90px;
     padding-top: 30px;
+    padding-left: 90px;
+    padding-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      width: 720px;
-      height: 694px;
-      top: -124px;
-      right: 0;
-    }
-
-    padding-left: 90px;
-    padding-top: 30px;
+    padding-top: 82px;
+    padding-left: 80px;
+    padding-bottom: 267px;
   }
 }
 
@@ -48,6 +35,7 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -64,6 +52,7 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -79,7 +68,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 231px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -87,7 +76,7 @@
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: 558px;
+    right: -22%;
   }
 }
 
