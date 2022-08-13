@@ -1,6 +1,7 @@
 .map__img {
   display: block;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: $desktop-width) {

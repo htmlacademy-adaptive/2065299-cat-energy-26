@@ -8,6 +8,7 @@
 
 .add-catalog__list {
   @include list-style;
+  margin-bottom: 35px;
 }
 
 .add-catalog__stock {
@@ -25,10 +26,20 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .add-catalog__list {
+    margin-bottom: 69px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .add-catalog__wrapper {
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 80px;
+  }
+
+  .add-catalog__list {
+    margin-bottom: 0;
   }
 }
