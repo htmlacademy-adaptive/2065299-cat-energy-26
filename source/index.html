@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--index">
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__logo-wrapper">
@@ -150,22 +150,32 @@
               />
             </div>
             <label class="cat-slider__caption"
-              >было<input class="cat-slider__range" type="range" />стало</label
-            >
+              ><input class="cat-slider__range" type="range"
+            /></label>
           </div>
         </div>
       </section>
       <section class="main-index__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper container">
-          <p class="contacts__deals-offer">
-            приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="contacts__content">
+          <div class="contacts__wrapper">
+            <p class="contacts__deals-offer">
+              приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
-        <div class="contacts__map map"></div>
+        <div class="contacts__map map">
+          <img
+            class="map__img"
+            src="img/location.png"
+            width="1440"
+            height="400"
+            alt="карта"
+          />
+        </div>
       </section>
     </main>
     <footer class="main-footer">

@@ -2,6 +2,16 @@
   background-color: #eaeaea;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
 }
 
 .example__title {
@@ -54,7 +64,7 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 660px 560px;
   }
 }

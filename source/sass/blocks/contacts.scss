@@ -1,5 +1,5 @@
 .contacts {
-  padding: 26px 0;
+  padding-top: 26px;
 }
 
 .contacts__deals-offer {
@@ -19,4 +19,39 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    width: 320px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 95px;
+    position: relative;
+    min-height: 400px;
+    z-index: 0;
+  }
+
+  .contacts__wrapper {
+    padding: 56px 80px;
+    min-height: 198px;
+    width: 565px;
+    background-color: #ffffff;
+    margin: 0;
+  }
+
+  .contacts__content {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
 }
