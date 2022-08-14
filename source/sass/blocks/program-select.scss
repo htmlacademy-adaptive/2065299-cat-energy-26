@@ -10,6 +10,12 @@
   border: none;
   padding: 0;
   margin: 0;
+  position: relative;
+
+  &--comment {
+    display: grid;
+    gap: 38px;
+  }
 }
 
 .program-select__description {
@@ -38,6 +44,29 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.program-select__title-line {
+  display: inline-block;
+  max-width: 227px;
+  padding: 0 20px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.program-select__title-line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  width: 70%;
 }
 
 .program-select__form-group-comment {
@@ -54,6 +83,11 @@
   @include list-style;
   display: grid;
   gap: 13px;
+
+  &--add {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }
 
 .program-select__info-input {
@@ -125,8 +159,24 @@
     border: 1px solid #e7e7e7;
   }
 
-  .program-select__form-group-comment {
+  .program-select__form-group--comment {
     gap: 76px;
+  }
+
+  .program-select__form-group-title {
+    width: 708px;
+  }
+
+  .program-select__title-line::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+    width: 40%;
   }
 
   .program-select__filter-list--add {
@@ -144,6 +194,11 @@
     display: grid;
     grid-template-columns: 283px 283px;
     gap: 32px;
+  }
+
+  .program-select__title-line {
+    max-width: max-content;
+    padding: 0 40px;
   }
 }
 
@@ -167,7 +222,6 @@
     padding: 0 70px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .program-select__title {
@@ -205,5 +259,9 @@
   .program-select__button-wrapper {
     grid-template-columns: 568px 568px;
     gap: 81px;
+  }
+
+  .program-select__form-group-title {
+    width: 1300px;
   }
 }

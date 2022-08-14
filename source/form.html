@@ -132,7 +132,10 @@
           </div>
           <fieldset class="program-select__form-group">
             <legend class="program-select__form-group-title">
-              Контактные данные (владельца кота)
+              <span class="program-select__title-line"
+                >Контактные данные<br />
+                (владельца кота)</span
+              >
             </legend>
             <div class="program-select__contact-wrapper container">
               <label class="program-select__form-control"
@@ -151,21 +154,24 @@
               /></label>
             </div>
           </fieldset>
-          <div class="program-select__form-group">
-            <label
-              class="program-select__form-group-title program-select__form-group-comment"
+          <div
+            class="program-select__form-group program-select__form-group--comment"
+          >
+            <label class="program-select__form-group-title" for="comment">
+              <span class="program-select__title-line">
+                Комментарий</span
+              ></label
             >
-              Комментарий
-              <textarea
-                class="program-select__info-input program-select__info-input--comment"
-                placeholder="Расскажите обо всех повАдках кота"
-                name="comment"
-              ></textarea>
-            </label>
+            <textarea
+              class="program-select__info-input program-select__info-input--comment"
+              placeholder="Расскажите обо всех повАдках кота"
+              id="comment"
+              name="comment"
+            ></textarea>
           </div>
           <fieldset class="program-select__form-group">
             <legend class="program-select__form-group-title">
-              Дополнительно
+              <span class="program-select__title-line"> Дополнительно</span>
             </legend>
             <ul
               class="program-select__filter-list program-select__filter-list--add container"
