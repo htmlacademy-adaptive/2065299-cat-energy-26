@@ -9,40 +9,44 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper container">
-        <a class="main-header__logo-link">
-          <img
-            class="main-header__logo-img"
-            src="img/logo/logo.svg"
-            width="191"
-            height="38"
-            alt="Логотип магазина питания для котов."
-          />
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-header__main-nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__item--active"
-              >Подобрать программу</a
+      <div class="main-header__wrapper">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo-link">
+            <img
+              class="main-header__logo-img"
+              src="img/logo/logo.svg"
+              width="191"
+              height="38"
+              alt="Логотип магазина питания для котов."
+            />
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html"
+                >Каталог продукции</a
+              >
+            </li>
+            <li
+              class="main-nav__item main-nav__item--active main-nav__item--last"
             >
-          </li>
-        </ul>
-      </nav>
+              <a class="main-nav__link" href="form.html">Подобрать программу</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-form">
       <section class="main-form__program-select program-select">
         <h1 class="program-select__title title">Подбор программы</h1>
-        <p class="program-select__description">
+        <p class="program-select__description container">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form
@@ -50,105 +54,129 @@
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <fieldset class="program-select__form-group">
-            <legend class="visually-hidden">Данные кота</legend>
-            <label class="program-select__form-control"
-              >Имя:*<input
-                class="program-select__info-input"
-                type="text"
-                name="cat-name"
-                placeholder="Барсик"
-                required<input
-            /></label>
-            <label class="program-select__form-control"
-              >Вес (кг):*<input
-                class="program-select__info-input"
-                type="text"
-                name="cat-weight"
-                placeholder="7"
-                required<input
-            /></label>
-            <label class="program-select__form-control"
-              >Возраст (лет):<input
-                class="program-select__info-input"
-                type="text"
-                name="cat-age"
-                placeholder="7"
-                <input
-            /></label>
-          </fieldset>
-          <fieldset class="program-select__form-group">
-            <legend class="visually-hidden">Цель программы</legend>
-            <ul class="program-select__filter-list">
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--radio"
-                  ><input
-                    class="program-select__filter-input"
-                    type="radio"
-                    name="program-purpose"
-                    value="weight-lost"
-                  />Похудение</label
+          <div class="program-select__wrapper">
+            <div class="program-select__line-wrapper">
+              <fieldset
+                class="program-select__form-group program-select__form-group--centered"
+              >
+                <legend class="visually-hidden">Данные кота</legend>
+                <label class="program-select__form-control"
+                  >Имя:*<input
+                    class="program-select__info-input"
+                    type="text"
+                    name="cat-name"
+                    placeholder="Барсик"
+                    required<input
+                /></label>
+                <label class="program-select__form-control"
+                  >Вес (кг):*<input
+                    class="program-select__info-input"
+                    type="text"
+                    name="cat-weight"
+                    placeholder="7"
+                    required<input
+                /></label>
+                <label class="program-select__form-control"
+                  >Возраст (лет):<input
+                    class="program-select__info-input"
+                    type="text"
+                    name="cat-age"
+                    placeholder="7"
+                    <input
+                /></label>
+              </fieldset>
+            </div>
+            <div class="program-select__line-wrapper">
+              <fieldset
+                class="program-select__form-group program-select__form-group--centered"
+              >
+                <legend class="visually-hidden">Цель программы</legend>
+                <ul
+                  class="program-select__filter-list program-select__filter-list--purpose"
                 >
-              </li>
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--radio"
-                  ><input
-                    class="program-select__filter-input"
-                    type="radio"
-                    name="program-purpose"
-                    value="weight-gain"
-                  />Набор массы</label
-                >
-              </li>
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--radio"
-                  ><input
-                    class="program-select__filter-input"
-                    type="radio"
-                    name="program-purpose"
-                    value="need-advaice"
-                  />Не знаю (Нужен ваш совет)</label
-                >
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="program-select__form-group">
-            <legend class="program-select__form-group-title">
-              Контактные данные (владельца кота)
-            </legend>
-            <label class="program-select__form-control"
-              >E-mail:*<input
-                class="program-select__info-input program-select__info-input--mail"
-                type="email"
-                name="owner-mail"
-                placeholder="kuklachev@gmail.com"
-            /></label>
-            <label class="program-select__form-control"
-              >Телефон:*<input
-                class="program-select__info-input program-select__info-input--phone"
-                type="tel"
-                name="owner-phone"
-                placeholder="8 (960) 900-60-90"
-            /></label>
-          </fieldset>
-          <div class="program-select__form-group">
-            <label class="program-select__form-group-title">
-              Комментарий
-              <textarea
-                class="program-select__info-input program-select__info-input--comment"
-                placeholder="Расскажите обо всех повАдках кота"
-                name="comment"
-              ></textarea>
-            </label>
+                  <li class="program-select__filter-item">
+                    <label
+                      class="program-select__form-control program-select__form-control--radio"
+                      ><input
+                        class="program-select__filter-input"
+                        type="radio"
+                        name="program-purpose"
+                        value="weight-lost"
+                      />Похудение</label
+                    >
+                  </li>
+                  <li class="program-select__filter-item">
+                    <label
+                      class="program-select__form-control program-select__form-control--radio"
+                      ><input
+                        class="program-select__filter-input"
+                        type="radio"
+                        name="program-purpose"
+                        value="weight-gain"
+                      />Набор массы</label
+                    >
+                  </li>
+                  <li class="program-select__filter-item">
+                    <label
+                      class="program-select__form-control program-select__form-control--radio"
+                      ><input
+                        class="program-select__filter-input"
+                        type="radio"
+                        name="program-purpose"
+                        value="need-advaice"
+                      />Не знаю (Нужен ваш совет)</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </div>
           <fieldset class="program-select__form-group">
             <legend class="program-select__form-group-title">
-              Дополнительно
+              <span class="program-select__title-line"
+                >Контактные данные<br />
+                (владельца кота)</span
+              >
             </legend>
-            <ul class="program-select__filter-list">
+            <div class="program-select__contact-wrapper container">
+              <label class="program-select__form-control"
+                >E-mail:*<input
+                  class="program-select__info-input program-select__info-input--mail"
+                  type="email"
+                  name="owner-mail"
+                  placeholder="kuklachev@gmail.com"
+              /></label>
+              <label class="program-select__form-control"
+                >Телефон:*<input
+                  class="program-select__info-input program-select__info-input--phone"
+                  type="tel"
+                  name="owner-phone"
+                  placeholder="8 (960) 900-60-90"
+              /></label>
+            </div>
+          </fieldset>
+          <div
+            class="program-select__form-group program-select__form-group--comment"
+          >
+            <label class="program-select__form-group-title" for="comment">
+              <span class="program-select__title-line">
+                Комментарий</span
+              ></label
+            >
+            <textarea
+              class="program-select__info-input program-select__info-input--comment"
+              placeholder="Расскажите обо всех повАдках кота"
+              id="comment"
+              name="comment"
+            ></textarea>
+          </div>
+          <fieldset class="program-select__form-group">
+            <legend class="program-select__form-group-title">
+              <span class="program-select__title-line"> Дополнительно</span>
+            </legend>
+            <ul
+              class="program-select__filter-list program-select__filter-list--add container"
+            >
               <li class="program-select__filter-item">
                 <label
                   class="program-select__form-control program-select__form-control--checkbox"
@@ -192,23 +220,35 @@
               </li>
             </ul>
           </fieldset>
-          <button class="program-select__button button" type="submit">
-            отправить заявку
-          </button>
-          <p class="program-select__form-hint">* — Обязательные поля</p>
+          <div class="program-select__button-wrapper container">
+            <button class="program-select__button button" type="submit">
+              отправить заявку
+            </button>
+            <p class="program-select__form-hint">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <section class="main-form__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper container">
-          <p class="contacts__deals-offer">
-            приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="contacts__content">
+          <div class="contacts__wrapper">
+            <p class="contacts__deals-offer">
+              приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
-        <div class="contacts__map map"></div>
+        <div class="contacts__map map">
+          <img
+            class="map__img"
+            src="img/location.png"
+            width="1440"
+            height="400"
+            alt="карта"
+          />
+        </div>
       </section>
     </main>
     <footer class="main-footer">
