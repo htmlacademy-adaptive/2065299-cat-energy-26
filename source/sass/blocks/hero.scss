@@ -7,24 +7,24 @@
       hsl(97 53% 47% / 85%)
 ),
       url("../img/background/barsik.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 63%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 63%, 100% 63%;
   }
 }
 
 .hero__wrapper {
-  padding-top: 25px;
+  padding: 25px 20px 0 20px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
-    padding-left: 90px;
-    padding-bottom: 526px;
+    padding: 30px 30px 526px 120px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 82px;
-    padding-left: 80px;
-    padding-bottom: 267px;
+    padding: 82px 110px 267px 190px;
+    width: 1440px;
   }
 }
 

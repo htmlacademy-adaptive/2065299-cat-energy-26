@@ -35,10 +35,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 95px;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-rows: 95px 1fr 107px;
     min-height: 400px;
-    z-index: 0;
   }
 
   .contacts__wrapper {
@@ -46,12 +46,9 @@
     min-height: 198px;
     width: 565px;
     background-color: #ffffff;
-    margin: 0;
-  }
-
-  .contacts__content {
-    width: 1440px;
-    padding: 0 110px;
-    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: 1;
+    // align-self: start;
   }
 }
