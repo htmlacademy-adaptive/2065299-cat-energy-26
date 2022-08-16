@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--index">
     <header class="main-header">
-      <div class="main-header__wrapper container">
+      <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link">
           <img
             class="main-header__logo-img"
@@ -29,7 +30,7 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--last">
             <a class="main-nav__link" href="form.html">Подобрать программу</a>
           </li>
         </ul>
@@ -41,7 +42,7 @@
           <h1 class="visually-hidden">
             Магазин функционального питания для котов Кэт энерджи
           </h1>
-          <h2 class="hero__title">Функциональное питание для котов</h2>
+          <h2 class="hero__title">Функциональное<br />питание для котов</h2>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <img
             class="hero__img"
@@ -99,26 +100,32 @@
       </section>
       <section class="main-index__example example">
         <div class="example__wrapper container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__descriptoin">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
-          <dl class="example__results">
-            <div class="example__item">
-              <dt class="example__number">5 КГ</dt>
-              <dd class="example__results-description">снижение<br />веса</dd>
+          <div class="example__text-wrapper">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__descriptoin">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
+            <div class="example__results-wrapper">
+              <dl class="example__results">
+                <div class="example__item">
+                  <dt class="example__number">5 КГ</dt>
+                  <dd class="example__results-description">
+                    снижение<br />веса
+                  </dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 дней</dt>
+                  <dd class="example__results-description">
+                    затрачено<br />времени
+                  </dd>
+                </div>
+              </dl>
+              <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
             </div>
-            <div class="example__item">
-              <dt class="example__number">60 дней</dt>
-              <dd class="example__results-description">
-                затрачено<br />времени
-              </dd>
-            </div>
-          </dl>
-          <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
+          </div>
           <div class="example__slider cat-slider">
             <div class="cat-slider__img-wrapper">
               <img
@@ -137,14 +144,14 @@
               />
             </div>
             <label class="cat-slider__caption"
-              >было<input class="cat-slider__range" type="range" />стало</label
-            >
+              ><input class="cat-slider__range" type="range"
+            /></label>
           </div>
         </div>
       </section>
       <section class="main-index__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper container">
+        <div class="contacts__wrapper">
           <p class="contacts__deals-offer">
             приглашаем к сотрудничеству дилеров!
           </p>
@@ -152,7 +159,15 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </address>
         </div>
-        <div class="contacts__map map"></div>
+        <div class="contacts__map map">
+          <img
+            class="map__img"
+            src="img/location.png"
+            width="1440"
+            height="400"
+            alt="карта"
+          />
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -196,11 +211,11 @@
             >HTML Academy</a
           >
           <a
-            class="copyrate__logo-link"
+            class="copyright__logo-link"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
             <img
-              class="copyrate__logo-img"
+              class="copyright__logo-img"
               src="img/htmlacademy.svg"
               width="27"
               height="34"

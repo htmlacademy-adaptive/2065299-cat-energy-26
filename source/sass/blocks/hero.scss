@@ -1,11 +1,31 @@
 .hero {
-  background-image: linear-gradient(
-    hsl(97 53% 47% / 85%),
-    hsl(97 53% 47% / 85%)
-  ),
-    url("../img/background/barsik.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 63%;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+),
+      url("../img/background/barsik.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 63%, 100% 63%;
+  }
+}
+
+.hero__wrapper {
+  padding: 25px 20px 0 20px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px 526px 120px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 267px 190px;
+    width: 1440px;
+  }
 }
 
 .hero__title {
@@ -15,6 +35,15 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
 }
 
 .hero__slogan {
@@ -23,8 +52,38 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .hero__img {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: -22%;
+  }
+}
+
+.hero__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+  }
 }

@@ -1,3 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
 .copyright__link {
   text-decoration: none;
   color: #444444;
@@ -5,6 +15,6 @@
   font-size: 16px;
 }
 
-.copyrate__logo-link {
+.copyright__logo-link {
   display: block;
 }

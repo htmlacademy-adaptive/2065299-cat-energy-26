@@ -2,6 +2,16 @@
   background-color: #eaeaea;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
 }
 
 .example__title {
@@ -20,6 +30,15 @@
 
 .example__results {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .example__results-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__number {
@@ -41,4 +60,11 @@
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 660px 560px;
+  }
 }

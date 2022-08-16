@@ -11,4 +11,18 @@
   background-color: #ffffff;
   margin: 0;
   height: 100%;
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .page__body--index {
+    background-image: linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+),
+      url("../img/background/barsik-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right top;
+    background-size: 50% 694px, 50% 694px;
+  }
 }

@@ -1,3 +1,14 @@
 .meal-program__list {
   @include list-style;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
 }
