@@ -1,3 +1,8 @@
+.main-nav {
+  position: relative;
+  min-height: 66px;
+}
+
 .main-nav__list {
   @include list-style;
   font-family: "Oswald", "Arial", sans-serif;
@@ -17,10 +22,9 @@
   }
 }
 
-
 .main-nav__link {
   text-decoration: none;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   display: block;
   padding: 22px 0 24px;

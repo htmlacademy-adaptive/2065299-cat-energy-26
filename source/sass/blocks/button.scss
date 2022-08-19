@@ -6,12 +6,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  background-color: #68b738;
+  background-color: $basicgreen;
   padding: 14px 26px;
   border: none;
 
   &--show-all {
-    background-color: #f2f2f2;
-    color: #444444;
+    background-color: $basicgrey;
+    color: $special-dark-grey;
   }
 }
