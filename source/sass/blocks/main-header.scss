@@ -51,6 +51,7 @@
   cursor: pointer;
   border: none;
   background-color: #ffffff;
+  position: relative;
 
 
   @media (min-width: $tablet-width) {
@@ -58,7 +59,7 @@
   }
 }
 
-.main-nav--closed ~ .main-header__logo-wrapper::before {
+.main-nav--closed ~ .main-header__toggle::before {
   content: "";
   position: absolute;
   top: 24px;
