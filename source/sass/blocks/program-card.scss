@@ -1,18 +1,47 @@
 .program-card {
-  background-color: #f2f2f2;
+  background-color: $basicgrey;
+  padding: 21px 20px 18px;
 }
 
 .program-card__title {
   @include oswald-reg;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
+  position: relative;
   margin: 0;
+  padding: 8px 0 8px 69px;
+  margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: $basicgreen;
+  }
 }
 
 .program-card__description {
   margin: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 13px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .program-card__link {
@@ -21,7 +50,99 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
-  display: block;
+  color: $black;
+  display: inline-block;
   padding: 4px 49px 4px 0;
+  background-image: url("../img/icon/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 32px 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .program-card {
+    padding: 77px 316px 53px 52px;
+    position: relative;
+    background-repeat: no-repeat;
+
+    &--slim {
+      background-image: url("../img/icon/cat-slim.svg");
+      background-size: 140px 194px;
+      background-position: right  30px top 8px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      top: 91px;
+      right: 62px;
+      background-color: $basicgreen;
+      z-index: -1;
+    }
+  }
+
+  .program-card__title {
+    padding: 0;
+    background: none;
+    margin-bottom: 24px;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .program-card__description {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-card__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-card__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-card {
+    padding: 41px 51px  55px 52px;
+  }
+
+  .program-card__title {
+    padding: 35px 0 35px 162px;
+    margin-bottom: 39px;
+
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .program-card__description {
+    margin-bottom: 23px;
+  }
 }

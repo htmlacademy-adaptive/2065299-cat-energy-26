@@ -38,7 +38,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: $black;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -55,7 +55,7 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: $black;
     text-align: left;
     font-size: 20px;
     line-height: 20px;

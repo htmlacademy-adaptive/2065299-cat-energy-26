@@ -2,7 +2,7 @@
   @include oswald-reg;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -15,10 +15,39 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 247px 247px;
     gap: 37px 136px;
+    counter-reset: number 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 247px 247px 247px 247px;
     gap: 77px;
   }
+}
+
+.advantages__item {
+  padding-left: 80px;
+  position: relative;
+  counter-increment: number;
+
+  &::after {
+    @include oswald-reg;
+    content: counter(number);
+    font-size: 280px;
+    line-height: 280px;
+    color: $basicgrey;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-weight: normal;
+  }
+    // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 60px;
+  //   height: 60px;
+  //   background-color: $basic-green;
+  //   display: block;
+  // }
 }

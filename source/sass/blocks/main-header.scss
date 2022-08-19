@@ -23,6 +23,7 @@
   flex-shrink: 0;
   justify-content: space-between;
   padding: 10px 0 18px;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     width: 280px;
@@ -43,7 +44,27 @@
 }
 
 .main-header__toggle {
+  width: 24px;
+  height: 38px;
+  padding: 0;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed ~ .main-header__logo-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
 }
