@@ -9,23 +9,22 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-  position: relative;
   margin: 0;
-  padding: 8px 0 8px 69px;
   margin-bottom: 22px;
   background-repeat: no-repeat;
   background-position: left top;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    background-color: $basicgreen;
+  &--slim {
+    padding: 11px 0 7px 69px;
+    background-image: url("../img/icon/cat-slim.svg");
+    background-size: 50px 53px;
+  }
+
+  &--weight-gain {
+    padding: 7px 0 7px 78px;
+    background-image: url("../../img/icon/cat-gain.svg");
+    background-size: 67px 50px;
+    margin-left: -7px;
   }
 }
 
@@ -38,6 +37,12 @@
     padding-bottom: 23px;
     border-bottom: 1px solid #d9d9d9;
 
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     br {
       display: none;
     }
@@ -73,27 +78,19 @@
 
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .program-card {
-    padding: 77px 316px 53px 52px;
-    position: relative;
     background-repeat: no-repeat;
+    padding: 77px 28px 53px 52px;
 
     &--slim {
-      background-image: url("../img/icon/cat-slim.svg");
-      background-size: 140px 194px;
-      background-position: right  30px top 8px;
+      background-image: url("../../img/icon/cat-slim.svg");
+      background-size: 200px 211px;
+      background-position: right 62px top 81px;
     }
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      top: 91px;
-      right: 62px;
-      background-color: $basicgreen;
-      z-index: -1;
+    &--weight-gain {
+      background-image: url("../../img/icon/cat-gain.svg");
+      background-size: 200px 211px;
+      background-position: right 28px top 91px;
     }
   }
 
@@ -101,11 +98,6 @@
     padding: 0;
     background: none;
     margin-bottom: 24px;
-
-    &::before {
-      width: 0;
-      height: 0;
-    }
   }
 
   .program-card__description {
@@ -132,13 +124,22 @@
   }
 
   .program-card__title {
-    padding: 35px 0 35px 162px;
+    margin: 0;
     margin-bottom: 39px;
+    background-repeat: no-repeat;
+    background-position: left top;
 
+    &--slim {
+      padding: 40px 0 34px 162px;
+      background-image: url("../img/icon/cat-slim.svg");
+      background-size: 100px 106px;
+    }
 
-    &::before {
-      width: 100px;
-      height: 100px;
+    &--weight-gain {
+      padding: 36px 0 36px 181px;
+      background-image: url("../../img/icon/cat-gain.svg");
+      background-size: 134px 100px;
+      margin-left: -19px;
     }
   }
 
