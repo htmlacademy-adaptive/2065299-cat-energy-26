@@ -1,11 +1,11 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 24px 30px 34px;
     width: 768px;
     margin: 0 auto;
@@ -22,20 +22,12 @@
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  padding: 10px 0 18px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
     width: 280px;
     margin: 0 auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 24px 0 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 53px 0 29px;
+    padding: 10px 0 18px;
   }
 }
 
