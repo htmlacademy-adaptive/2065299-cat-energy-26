@@ -112,10 +112,15 @@
     max-width: 141px;
     padding: 0 7px;
     background-color: #ffffff;
+    margin-top: -7px;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 
