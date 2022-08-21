@@ -6,14 +6,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 30px 34px;
+    padding: 24px 0 34px;
     width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 53px 110px 29px;
+    padding: 53px 0 29px;
     margin: 0 auto;
   }
 }

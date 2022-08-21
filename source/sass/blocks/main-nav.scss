@@ -41,7 +41,7 @@
 }
 
 .main-nav__item {
-  &--last {
+  &:last-child {
     margin-right: 0;
 
     @media (max-width: $mobile-width-only) {

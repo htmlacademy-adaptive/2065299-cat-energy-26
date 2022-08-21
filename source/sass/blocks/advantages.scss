@@ -10,7 +10,7 @@
 .advantages__list {
   @include list-style;
   display: grid;
-  gap: 20px;
+  gap: 24px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 247px 247px;
@@ -27,17 +27,76 @@
 .advantages__item {
   padding-left: 80px;
   position: relative;
-  counter-increment: number;
 
-  &::after {
-    @include oswald-reg;
-    content: counter(number);
-    font-size: 280px;
-    line-height: 280px;
-    color: $basicgrey;
+  &::before {
+    content: "";
     position: absolute;
-    right: 30px;
-    top: 0;
-    font-weight: normal;
+    width: 60px;
+    height: 60px;
+    background-color: $basicgreen;
+    top: -3px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--useful::before {
+    background-image: url("../img/icon/leaf.svg");
+    background-size: 30px 32px;
+  }
+
+  &--easy::before {
+    background-image: url("../img/icon/tub.svg");
+    background-size: 29px 31px;
+  }
+
+  &--meal-count::before {
+    background-image: url("../img/icon/eat.svg");
+    background-size: 25px 30px;
+  }
+
+  &--deadline::before {
+    background-image: url("../img/icon/alarm.svg");
+    background-size: 32px 33px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    position: relative;
+    counter-increment: number;
+
+    &::after {
+      @include oswald-reg;
+      content: counter(number);
+      font-size: 280px;
+      line-height: 280px;
+      color: $basicgrey;
+      position: absolute;
+      left: 117px;
+      top: 0;
+      font-weight: normal;
+      z-index: -1;
+    }
   }
 }
