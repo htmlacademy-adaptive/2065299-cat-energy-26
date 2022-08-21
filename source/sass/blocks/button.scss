@@ -13,5 +13,23 @@
   &--show-all {
     background-color: $basicgrey;
     color: $special-dark-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba($color: $special-dark-grey, $alpha: 0.3);
+    }
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($color: #ffffff, $alpha: 0.3);
   }
 }

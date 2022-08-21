@@ -6,14 +6,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 0 34px;
+    padding: 24px 30px 34px;
     width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 53px 0 29px;
+    padding: 53px 110px 29px;
     margin: 0 auto;
   }
 }
@@ -56,7 +56,27 @@
     background-image: url("");
   }
 
+  &--nojs {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__logo-link:hover .main-header__logo-img {
+  opacity: 0.8;
+}
+
+.main-header__logo-link:active .main-header__logo-img {
+  opacity: 0.6;
 }

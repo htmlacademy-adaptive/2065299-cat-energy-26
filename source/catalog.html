@@ -9,7 +9,7 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__logo-wrapper">
-        <a class="main-header__logo-link">
+        <a class="main-header__logo-link" href="index.html">
           <img
             class="main-header__logo-img"
             src="img/logo/logo.svg"
@@ -18,11 +18,15 @@
             alt="Логотип магазина питания для котов."
           />
         </a>
-        <button class="main-header__toggle" type="button">
+        <button
+          class="main-header__toggle main-header__toggle--cross main-header__toggle--nojs"
+          type="button"
+        >
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-header__main-nav main-nav">
+      <!--модификатор --closed закрытое меню, --open открытое меню-->
+      <nav class="main-header__main-nav main-nav main-nav--open">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
