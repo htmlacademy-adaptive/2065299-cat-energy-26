@@ -1,7 +1,26 @@
 .social {
   @include list-style;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social__link {
   display: block;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 0 8px;
+  }
+}
+
+.social__item {
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link:hover .social-icon {
+  fill: $basicgreen;
 }
