@@ -21,6 +21,14 @@
   }
 }
 
-.social__link:hover .social-icon {
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon {
   fill: $basicgreen;
+}
+
+.social__link:active .social__icon {
+  fill: rgba(104, 183, 56, 0.3);
 }
