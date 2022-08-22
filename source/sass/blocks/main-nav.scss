@@ -92,16 +92,6 @@
     width: 100%;
     text-align: center;
   }
-
-  // &--active {
-  //   @media (min-width: $tablet-width) {
-  //     border-bottom: 2px solid $basicgreen;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     border-color: #ffffff;
-  //   }
-  // }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -120,4 +110,3 @@
     }
   }
 }
-
