@@ -2,15 +2,15 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
-}
-
-.social__link {
-  display: block;
   padding: 20px 0;
 
   @media (min-width: $tablet-width) {
     padding: 4px 0 8px;
   }
+}
+
+.social__link {
+  display: block;
 }
 
 .social__item {

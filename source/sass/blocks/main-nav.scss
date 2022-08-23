@@ -10,10 +10,11 @@
     flex-direction: row;
     justify-content: flex-end;
     min-width: 470px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 570px;
+    width: 570px;
   }
 }
 
