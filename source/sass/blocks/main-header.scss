@@ -35,6 +35,10 @@
   display: block;
 }
 
+.main-header__logo-img {
+  display: block;
+}
+
 .main-header__toggle {
   display: inline-block;
   width: 24px;
@@ -48,12 +52,12 @@
   background-size: 24px 16px;
   background-position: right center;
 
-  &--closed {
+  &--burger {
     background-image: url("../img/icon/toggle-burger.svg");
   }
 
-  &--open {
-    background-image: url("");
+  &--cross {
+    background-image: url("../../img/icon/toggle-cross.svg");
   }
 
   &--nojs {

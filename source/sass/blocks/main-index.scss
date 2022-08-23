@@ -20,15 +20,4 @@
 
 .main-index__advantages {
   margin-bottom: 49px;
-
-  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    margin-bottom: 619px;
-    padding-bottom: 47px;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 205px;
-    margin-bottom: 0;
-  }
 }

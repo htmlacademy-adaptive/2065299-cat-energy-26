@@ -18,15 +18,18 @@
             alt="Логотип магазина питания для котов."
           />
         </a>
+        <!--модификатор --burger закрытое меню, --cross открытое меню, --nojs при отключенном js -->
         <button
-          class="main-header__toggle main-header__toggle--cross main-header__toggle--nojs"
+          class="main-header__toggle main-header__toggle--burger main-header__toggle--nojs"
           type="button"
         >
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <!--модификатор --closed закрытое меню, --open открытое меню-->
-      <nav class="main-header__main-nav main-nav main-nav--open">
+      <!--модификатор --closed закрытое меню, --opened открытое меню, --nojs при отключенном js -->
+      <nav
+        class="main-header__main-nav main-nav main-nav--closed main-nav--nojs"
+      >
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -303,5 +306,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

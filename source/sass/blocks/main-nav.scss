@@ -22,10 +22,10 @@
   color: $black;
   text-transform: uppercase;
   display: block;
-  padding: 22px 0 24px;
+  padding: 22px 0 23px;
   font-size: 20px;
   line-height: 20px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     color: rgba($color: #000000, $alpha: 0.6);
@@ -96,7 +96,11 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav {
-    &--open {
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
       position: absolute;
       left: 0;
       top: 66px;
@@ -105,8 +109,9 @@
       width: 100%;
     }
 
-    &--closed {
-      display: none;
+    &--no-js {
+      display: block;
+      position: static;
     }
   }
 }

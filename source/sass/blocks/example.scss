@@ -170,17 +170,10 @@
   .example__wrapper {
     display: grid;
     grid-template-columns: 660px 560px;
-    margin-top: -196px;
   }
 
   .example__cost-text {
     margin-right: 63px;
-  }
-}
-
-@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-  .example__wrapper {
-    margin-top: -619px;
   }
 }
 
