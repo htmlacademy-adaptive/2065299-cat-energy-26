@@ -6,10 +6,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     background-color: #ffffff;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 0;
     background-color: #eaeaea;
     background-image: linear-gradient(#ffffff 22.7%, #eaeaea 22.7%);
   }
@@ -199,6 +200,7 @@
 @media (min-width: $desktop-width) {
   .example__text-wrapper {
     padding-right: 224px;
+    padding-bottom: 75px;
   }
 }
 
@@ -218,7 +220,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     width: 768px;
-    padding: 0 30px;
+    padding: 0 30px 100px;
     margin: 0 auto;
   }
 }

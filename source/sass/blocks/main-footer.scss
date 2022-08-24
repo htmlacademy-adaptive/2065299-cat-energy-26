@@ -1,13 +1,23 @@
 .main-footer {
   background-color: $basicgrey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .main-footer__logo-link {
   display: block;
-  padding: 39px 76px 31px;
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #d9d9d9;
+    padding: 39px 76px 31px;
   }
 }
 

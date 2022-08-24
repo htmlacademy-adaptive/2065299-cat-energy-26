@@ -20,4 +20,8 @@
 
 .main-index__advantages {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
