@@ -9,3 +9,110 @@
   color: $black;
   text-transform: uppercase;
 }
+
+.cat-slider__wrapper {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+    height: 256px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  // @media (min-width: $desktop-width) {
+  // }
+}
+
+.cat-slider__photo-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eaeaea;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    background-image: linear-gradient(#ffffff 30.66%, #eaeaea 30.66%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(#ffffff 28.1%, #eaeaea 28.1%);
+  }
+}
+
+.cat-slider__photo-wrapper-2 {
+  width: 50%;
+  z-index: 1;
+}
+
+.cat-slider__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: unset;
+}
+
+.cat-slider__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #666666;
+  z-index: 2;
+}
+
+.cat-slider__range {
+  display: block;
+  box-sizing: border-box;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.cat-slider__range::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-right: 8px solid #666666;
+  position: absolute;
+  top: 9px;
+  right: 22px;
+}
+
+.cat-slider__range::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left: 8px solid #666666;
+  position: absolute;
+  top: 9px;
+  left: 22px;
+}
+
+.cat-slider__range:hover {
+  border-color: $basicgreen;
+}
+
+.cat-slider__range:hover .cat-slider__range::after {
+  border-left-color: $basicgreen;
+}

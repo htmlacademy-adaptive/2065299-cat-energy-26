@@ -1,0 +1,162 @@
+.info-form {
+  display: grid;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.info-form--owner {
+  gap: 14px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 568px 568px;
+    gap: 81px;
+  }
+}
+
+.info-form--comment {
+  gap: 37px;
+
+  @media (min-width: $tablet-width) {
+    gap: 76px;
+  }
+}
+
+.info-form__control-label {
+  @include oswald-reg;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $special-dark-grey;
+  margin-right: 12px;
+}
+
+.info-form__input {
+  @include oswald-reg;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  padding: 13px 43px 14px 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 43px 10px 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 43px 8px 19px;
+  }
+
+  &::placeholder {
+    @include oswald-reg;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+}
+
+.info-form__input--comment {
+  flex-grow: 0;
+  resize: none;
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px 12px 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    padding: 10px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
+  &::placeholder {
+    @include oswald-reg;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+}
+
+.info-form__control {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.info-form__icon {
+  position: absolute;
+  top: center;
+  right: 14px;
+
+  &--mail {
+    stroke: #222222;
+  }
+
+  &--phone {
+    fill: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
+}
+
+.info-form__input:hover {
+  border-color: #cdcdcd;
+}
+
+.info-form__input:focus-visible {
+  border: 2px solid $special-dark-grey;
+  padding: 12px 42px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 42px 9px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 42px 7px 18px;
+  }
+}
+
+.info-form__input:focus-visible + .info-form__icon--mail {
+  stroke: $basicgreen;
+}
+
+.info-form__input--error {
+  border: 2px solid #ff8282;
+  padding: 12px 42px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 42px 9px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 42px 7px 18px;
+  }
+}
+
+.info-form__input--error + .info-form__icon--mail {
+  stroke: #ff8282;
+}
+
+.info-form__input--error + .info-form__icon--pfone {
+  fill: #ff8282;
+}
+
+.info-form__input--comment:focus-visible {
+  padding: 9px 11px 9px 14px;
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 18px;
+  }
+}
