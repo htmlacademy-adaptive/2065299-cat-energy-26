@@ -49,7 +49,8 @@
       <section class="main-form__program-select program-select">
         <h1 class="program-select__title title">Подбор программы</h1>
         <p class="program-select__description container">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+          Заполните анкету, и мы подберем<br />
+          программу питания для вашего кота
         </p>
         <form
           class="program-select__form"
@@ -96,44 +97,54 @@
             </div>
             <div class="program-select__line-wrapper">
               <fieldset
-                class="program-select__form-group program-select__form-group--centered"
+                class="program-select__form-group program-select__form-group--centered filter"
               >
                 <legend class="visually-hidden">Цель программы</legend>
-                <ul
-                  class="program-select__filter-list program-select__filter-list--purpose"
-                >
-                  <li class="program-select__filter-item">
-                    <label
-                      class="program-select__form-control program-select__form-control--radio"
+                <ul class="filter__list filter__list--purpose">
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--radio"
                       ><input
-                        class="program-select__filter-input"
+                        class="visually-hidden filter__input"
                         type="radio"
                         name="program-purpose"
                         value="weight-lost"
-                      />Похудение</label
-                    >
+                        checked
+                      />
+                      <span
+                        class="filter__control-mark filter__control-mark--radio"
+                      ></span>
+                      <span class="filter__control-label">Похудение</span>
+                    </label>
                   </li>
-                  <li class="program-select__filter-item">
-                    <label
-                      class="program-select__form-control program-select__form-control--radio"
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--radio"
                       ><input
-                        class="program-select__filter-input"
+                        class="visually-hidden filter__input"
                         type="radio"
                         name="program-purpose"
                         value="weight-gain"
-                      />Набор массы</label
-                    >
+                      />
+                      <span
+                        class="filter__control-mark filter__control-mark--radio"
+                      ></span>
+                      <span class="filter__control-label">Набор массы</span>
+                    </label>
                   </li>
-                  <li class="program-select__filter-item">
-                    <label
-                      class="program-select__form-control program-select__form-control--radio"
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--radio"
                       ><input
-                        class="program-select__filter-input"
+                        class="visually-hidden filter__input"
                         type="radio"
                         name="program-purpose"
                         value="need-advaice"
-                      />Не знаю (Нужен ваш совет)</label
-                    >
+                      />
+                      <span
+                        class="filter__control-mark filter__control-mark--radio"
+                      ></span>
+                      <span class="filter__control-label"
+                        >Не знаю (Нужен ваш совет)</span
+                      >
+                    </label>
                   </li>
                 </ul>
               </fieldset>

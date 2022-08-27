@@ -34,6 +34,11 @@
   font-size: 16px;
   color: $special-dark-grey;
   margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .info-form__input {
@@ -61,6 +66,11 @@
     font-size: 16px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -132,6 +142,10 @@
   stroke: $basicgreen;
 }
 
+.info-form__input:focus-visible + .info-form__icon--phone {
+  fill: $basicgreen;
+}
+
 .info-form__input--error {
   border: 2px solid #ff8282;
   padding: 12px 42px 13px 15px;
@@ -149,7 +163,7 @@
   stroke: #ff8282;
 }
 
-.info-form__input--error + .info-form__icon--pfone {
+.info-form__input--error + .info-form__icon--phone {
   fill: #ff8282;
 }
 

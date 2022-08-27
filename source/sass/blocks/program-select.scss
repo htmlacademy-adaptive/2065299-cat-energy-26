@@ -19,21 +19,6 @@
   margin-bottom: 39px;
 }
 
-.program-select__form-control {
-  @include oswald-reg;
-  text-transform: uppercase;
-  font-size: 16px;
-  color: $special-dark-grey;
-
-  &--radio {
-    color: #222222;
-  }
-
-  &--checkbox {
-    color: $black;
-  }
-}
-
 .program-select__form-group-title {
   @include oswald-reg;
   font-size: 24px;
@@ -70,10 +55,6 @@
 }
 
 .program-select__filter-list {
-  @include list-style;
-  display: grid;
-  gap: 13px;
-
   &--add {
     padding: 0 20px;
     margin: 0 auto;
@@ -112,14 +93,12 @@
 
   .program-select__description {
     margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .program-select__filter-list {
     gap: 18px;
-  }
-
-  .program-select__filter-list--purpose {
-    border: 1px solid #e7e7e7;
   }
 
   .program-select__form-group-title {
@@ -177,6 +156,10 @@
   .program-select__button-wrapper {
     padding: 0 70px;
   }
+
+  .program-select__wrapper {
+    padding-bottom: 71px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -194,6 +177,7 @@
     display: grid;
     grid-template-columns: 568px 568px;
     gap: 81px;
+    margin-bottom: 69px;
   }
 
   .program-select__contact-wrapper {
