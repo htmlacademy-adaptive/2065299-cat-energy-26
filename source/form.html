@@ -264,52 +264,67 @@
               rows="5"
             ></textarea>
           </div>
-          <fieldset class="program-select__form-group">
-            <legend class="program-select__form-group-title">
-              <span class="program-select__title-line"> Дополнительно</span>
+          <fieldset class="program-select__form-group filter">
+            <!-- program-select__form-group-title -->
+            <legend class="filter__title">
+              <span class="filter__title-line"> Дополнительно</span>
             </legend>
-            <ul
-              class="program-select__filter-list program-select__filter-list--add container"
-            >
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--checkbox"
+            <ul class="filter__list filter__list--add container">
+              <li class="filter__item">
+                <label class="filter__control filter__control--checkbox"
                   ><input
-                    class="program-select__filter-input"
+                    class="visually-hidden filter__input"
                     type="checkbox"
                     name="fake-sugar"
                     checked
-                  />сахарозаменитель</label
+                  />
+                  <span
+                    class="filter__control-mark filter__control-mark--checkbox"
+                  ></span>
+                  <span class="filter__control-label"
+                    >сахарозаменитель</span
+                  ></label
                 >
               </li>
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--checkbox"
+              <li class="filter__item">
+                <label class="filter__control filter__control--checkbox"
                   ><input
-                    class="program-select__filter-input"
+                    class="visually-hidden filter__input"
                     type="checkbox"
                     name="water"
-                  />питьевая вода</label
+                  />
+                  <span
+                    class="filter__control-mark filter__control-mark--checkbox"
+                  ></span>
+                  <span class="filter__control-label"
+                    >питьевая вода</span
+                  ></label
                 >
               </li>
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--checkbox"
+              <li class="filter__item">
+                <label class="filter__control filter__control--checkbox"
                   ><input
-                    class="program-select__filter-input"
+                    class="visually-hidden filter__input"
                     type="checkbox"
                     name="milk"
-                  />молоко</label
+                  />
+                  <span
+                    class="filter__control-mark filter__control-mark--checkbox"
+                  ></span>
+                  <span class="filter__control-label">молоко</span></label
                 >
               </li>
-              <li class="program-select__filter-item">
-                <label
-                  class="program-select__form-control program-select__form-control--checkbox"
+              <li class="filter__item">
+                <label class="filter__control filter__control--checkbox"
                   ><input
-                    class="program-select__filter-input"
+                    class="visually-hidden filter__input"
                     type="checkbox"
                     name="vitamins"
-                  />витамины</label
+                  />
+                  <span
+                    class="filter__control-mark filter__control-mark--checkbox"
+                  ></span>
+                  <span class="filter__control-label">витамины</span></label
                 >
               </li>
             </ul>

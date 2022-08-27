@@ -4,6 +4,25 @@
   gap: 25px;
 }
 
+.filter__list--add {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 283px 283px;
+    gap: 32px 62px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 244px 244px 244px 244px;
+    gap: 81px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
 .filter__list--purpose {
   padding: 29px 0 26px;
 
