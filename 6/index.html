@@ -19,15 +19,18 @@
             alt="Логотип магазина питания для котов."
           />
         </a>
+        <!--модификатор --burger закрытое меню, --cross открытое меню, --nojs при отключенном js -->
         <button
-          class="main-header__toggle main-header__toggle--cross main-header__toggle--nojs"
+          class="main-header__toggle main-header__toggle--burger main-header__toggle--nojs"
           type="button"
         >
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <!--модификатор --closed закрытое меню, --open открытое меню-->
-      <nav class="main-header__main-nav main-nav main-nav--open">
+      <!--модификатор --closed закрытое меню, --opened открытое меню, --nojs при отключенном js -->
+      <nav
+        class="main-header__main-nav main-nav main-nav--closed main-nav--nojs"
+      >
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a
@@ -94,33 +97,35 @@
           </li>
         </ul>
       </section>
-      <section class="main-index__advantages advantages container">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--useful">
-            Функциональное питание<br />
-            содержит только полезные<br />
-            питательные вещества.
-          </li>
-          <li class="advantages__item advantages__item--easy">
-            Выпускается в виде порошка,<br />
-            который нужно лишь залить<br />
-            кипятком и готово.
-          </li>
-          <li class="advantages__item advantages__item--meal-count">
-            Замените один-два приема<br />
-            обычной еды на наше<br />
-            функциональное питание.
-          </li>
-          <li class="advantages__item advantages__item--deadline">
-            Уже через месяц наслаждайтесь<br />
-            изменениями к лучшему<br />
-            вашего питомца!
-          </li>
-        </ul>
+      <section class="main-index__advantages advantages">
+        <div class="advantages__wrapper container">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--useful">
+              Функциональное питание<br />
+              содержит только полезные<br />
+              питательные вещества.
+            </li>
+            <li class="advantages__item advantages__item--easy">
+              Выпускается в виде порошка,<br />
+              который нужно лишь залить<br />
+              кипятком и готово.
+            </li>
+            <li class="advantages__item advantages__item--meal-count">
+              Замените один-два приема<br />
+              обычной еды на наше<br />
+              функциональное питание.
+            </li>
+            <li class="advantages__item advantages__item--deadline">
+              Уже через месяц наслаждайтесь<br />
+              изменениями к лучшему<br />
+              вашего питомца!
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="main-index__example example">
-        <div class="example__wrapper container">
+        <div class="example__wrapper">
           <div class="example__text-wrapper">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">
@@ -154,25 +159,37 @@
             </div>
           </div>
           <div class="example__slider cat-slider">
-            <div class="cat-slider__img-wrapper">
-              <img
-                class="cat-slider__img cat-slider__img--before"
-                src=""
-                width="280"
-                height="232"
-                alt="Фото кота до похудения."
-              />
-              <img
-                class="cat-slider__img cat-slider__img--after"
-                src=""
-                width="280"
-                height="232"
-                alt="Фото кота после похудения."
-              />
+            <div class="cat-slider__wrapper">
+              <div
+                class="cat-slider__photo-wrapper cat-slider__photo-wrapper-1"
+              >
+                <img
+                  class="cat-slider__photo"
+                  src="img/viewport=mobile, state=before@1x.png"
+                  width="280"
+                  height="256"
+                  alt="Фото кота до похудения."
+                />
+              </div>
+              <div
+                class="cat-slider__photo-wrapper cat-slider__photo-wrapper-2"
+              >
+                <img
+                  class="cat-slider__photo"
+                  src="img/viewport=mobile, state=after@1x.png"
+                  width="280"
+                  height="256"
+                  alt="Фото кота после похудения."
+                />
+              </div>
+              <div class="cat-slider__toggle">
+                <button class="cat-slider__range" type="button">
+                  <span class="visually-hidden"
+                    >Кнопка управления слайдером</span
+                  >
+                </button>
+              </div>
             </div>
-            <label class="cat-slider__caption"
-              ><input class="cat-slider__range" type="range"
-            /></label>
           </div>
         </div>
       </section>
@@ -180,7 +197,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__deals-offer">
-            приглашаем к&nbspсотрудничеству дилеров!
+            приглашаем к"&nbsp"сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
             ул. Большая Конюшенная, д. 19/8
@@ -191,7 +208,7 @@
           <iframe
             class="map__block"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.224240102643!2d30.318038470074004!3d59.93894480083386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661198738670!5m2!1sru!2sru"
-            width="100%"
+            width="320"
             height="362"
             allowfullscreen=""
             loading="lazy"
@@ -297,5 +314,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
