@@ -1,25 +1,22 @@
 .filter__list {
   @include list-style;
   display: grid;
-  gap: 25px;
+  gap: 12px;
 }
 
 .filter__list--add {
-  padding: 0 20px;
-  margin: 0 auto;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 283px 283px;
     gap: 32px 62px;
-    padding: 0 70px;
-    margin: 0 auto;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 244px 244px 244px 244px;
     gap: 81px;
-    padding: 0 110px;
-    margin: 0 auto;
+    margin-bottom: 61px;
   }
 }
 
@@ -29,7 +26,17 @@
   @media (min-width: $tablet-width) {
     padding: 25px 28px;
     border: 1px solid #e7e7e7;
-    gap: 23px;
+    gap: 13px;
+  }
+}
+
+.filter__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -102,7 +109,7 @@
   border-color: #bababa;
 }
 
-.filter__input:disabled + .filter__control-mark {
+.filter__input:disabled + .filter__control-mark--radio {
   border-color: rgba(186, 186, 186, 0.3);
 }
 
@@ -114,3 +121,18 @@
   color: rgba(34, 34, 34, 0.3);
 }
 
+.filter__input:checked + .filter__control-mark--checkbox {
+  background-image: url("../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: top 2px left 2px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top 7px left 7px;
+    background-image: url("../img/icon/tick-big.svg");
+  }
+}
+
+.filter__input:disabled + .filter__control-mark--checkbox {
+  opacity: 0.3;
+}
