@@ -1,8 +1,8 @@
 .button {
   @include oswald-reg;
   display: inline-block;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -32,5 +32,10 @@
   &:active {
     background-color: #5eaa2f;
     color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
