@@ -1,6 +1,7 @@
 .info-form {
   display: grid;
   gap: 13px;
+  grid-auto-rows: min-content;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
