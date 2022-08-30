@@ -1,7 +1,3 @@
-.cat-slider__img {
-  display: block;
-}
-
 .cat-slider__caption {
   @include oswald-reg;
   font-size: 16px;
@@ -12,12 +8,10 @@
 
 .cat-slider__wrapper {
   position: relative;
-
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin: 0 auto;
-    height: 256px;
-  }
+  width: 280px;
+  margin: 0 auto;
+  height: 256px;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     width: 560px;
@@ -27,33 +21,33 @@
 }
 
 .cat-slider__photo-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #eaeaea;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    background-image: linear-gradient(#ffffff 30.5%, #eaeaea 30.5%);
+  &--before {
+    width: 50%;
   }
 
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#ffffff 28.3%, #eaeaea 28.3%);
+  &--after {
+    width: 50%;
   }
-}
-
-.cat-slider__photo-wrapper-2 {
-  width: 50%;
-  z-index: 1;
 }
 
 .cat-slider__photo {
   position: absolute;
-  top: 0;
-  right: 0;
+  display: block;
   max-width: unset;
+  top: 0;
+
+  &--before {
+    left: 0;
+  }
+
+  &--after {
+    right: 0;
+  }
 }
 
 .cat-slider__toggle {
