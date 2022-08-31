@@ -19,7 +19,7 @@
             alt="Логотип магазина питания для котов."
           />
         </a>
-        <!--модификатор --burger закрытое меню, --cross открытое меню, --nojs при отключенном js -->
+        <!--модификатор burger закрытое меню, cross открытое меню, nojs при отключенном js -->
         <button
           class="main-header__toggle main-header__toggle--burger main-header__toggle--nojs"
           type="button"
@@ -27,7 +27,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <!--модификатор --closed закрытое меню, --opened открытое меню, --nojs при отключенном js -->
+      <!--модификатор closed закрытое меню, opened открытое меню, nojs при отключенном js -->
       <nav
         class="main-header__main-nav main-nav main-nav--closed main-nav--nojs"
       >
@@ -66,7 +66,9 @@
             height="270"
             alt="Пример питания для котов Кэт энерджи."
           />
-          <a class="hero__button button" href="">Подобрать программу</a>
+          <a class="hero__button button button--choose-program" href=""
+            >Подобрать программу</a
+          >
         </div>
       </section>
       <section class="main-index__meal-program meal-program container">
@@ -161,10 +163,10 @@
           <div class="example__slider cat-slider">
             <div class="cat-slider__wrapper">
               <div
-                class="cat-slider__photo-wrapper cat-slider__photo-wrapper-1"
+                class="cat-slider__photo-wrapper cat-slider__photo-wrapper--before"
               >
                 <img
-                  class="cat-slider__photo"
+                  class="cat-slider__photo cat-slider__photo--before"
                   src="img/viewport=mobile, state=before@1x.png"
                   width="280"
                   height="256"
@@ -172,10 +174,10 @@
                 />
               </div>
               <div
-                class="cat-slider__photo-wrapper cat-slider__photo-wrapper-2"
+                class="cat-slider__photo-wrapper cat-slider__photo-wrapper--after"
               >
                 <img
-                  class="cat-slider__photo"
+                  class="cat-slider__photo cat-slider__photo--after"
                   src="img/viewport=mobile, state=after@1x.png"
                   width="280"
                   height="256"
@@ -197,7 +199,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__deals-offer">
-            приглашаем к"&nbsp"сотрудничеству дилеров!
+            приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
             ул. Большая Конюшенная, д. 19/8
