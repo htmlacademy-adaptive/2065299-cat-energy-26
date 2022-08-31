@@ -1,11 +1,133 @@
-.cat-slider__img {
-  display: block;
-}
-
 .cat-slider__caption {
   @include oswald-reg;
   font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+}
+
+.cat-slider__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  height: 256px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+}
+
+.cat-slider__photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &--before {
+    width: 50%;
+  }
+
+  &--after {
+    width: 50%;
+  }
+}
+
+.cat-slider__photo {
+  position: absolute;
+  display: block;
+  max-width: unset;
+  top: 0;
+
+  &--before {
+    left: 0;
+  }
+
+  &--after {
+    right: 0;
+  }
+}
+
+.cat-slider__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #666666;
+  z-index: 2;
+}
+
+.cat-slider__range {
+  display: block;
+  box-sizing: border-box;
+  padding: 18px;
+  background-color: $white;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.cat-slider__range::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-right: 8px solid #666666;
+  position: absolute;
+  top: 9px;
+  right: 22px;
+}
+
+.cat-slider__range::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left: 8px solid #666666;
+  position: absolute;
+  top: 9px;
+  left: 22px;
+}
+
+.cat-slider__range:hover {
+  border-color: $basicgreen;
+}
+
+.cat-slider__range:hover::after {
+  border-left-color: $basicgreen;
+}
+
+.cat-slider__range:hover::before {
+  border-right-color: $basicgreen;
+}
+
+.cat-slider__range:hover .cat-slider__toggle {
+  background-color: $basicgreen;
+}
+
+.cat-slider__range:active {
+  border-color: rgba(94, 170, 47, 0.6);
+}
+
+.cat-slider__range:active::after {
+  border-left-color: rgba(94, 170, 47, 0.6);
+}
+
+.cat-slider__range:active::before {
+  border-right-color: rgba(94, 170, 47, 0.6);
+}
+
+.cat-slider__range:active .cat-slider__toggle {
+  background-color: rgba(94, 170, 47, 0.6);
 }

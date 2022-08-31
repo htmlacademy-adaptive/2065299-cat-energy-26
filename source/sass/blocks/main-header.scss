@@ -1,19 +1,19 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+    padding: 24px 30px 34px;
     width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 0 110px;
+    padding: 53px 110px 29px;
     margin: 0 auto;
   }
 }
@@ -22,20 +22,12 @@
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  padding: 10px 0 18px;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
     width: 280px;
     margin: 0 auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 24px 0 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 53px 0 29px;
+    padding: 10px 0 18px;
   }
 }
 
@@ -43,29 +35,52 @@
   display: block;
 }
 
+.main-header__logo-img {
+  display: block;
+}
+
 .main-header__toggle {
+  display: inline-block;
   width: 24px;
   height: 38px;
   padding: 0;
   align-self: center;
   cursor: pointer;
   border: none;
-  background-color: #ffffff;
-  position: relative;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+  background-position: right center;
 
+  &--burger {
+    background-image: url("../img/icon/toggle-burger.svg");
+  }
+
+  &--cross {
+    background-image: url("../img/icon/toggle-cross.svg");
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav--closed ~ .main-header__toggle::before {
-  content: "";
-  position: absolute;
-  top: 24px;
-  right: 0;
-  width: 24px;
-  height: 2px;
-  background-color: $black;
-  box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+.main-header__logo-link:hover .main-header__logo-img {
+  opacity: 0.8;
+}
+
+.main-header__logo-link:active .main-header__logo-img {
+  opacity: 0.6;
 }

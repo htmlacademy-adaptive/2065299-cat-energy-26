@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -10,11 +11,32 @@
 
 .copyright__link {
   text-decoration: none;
-  color: $special-dark-grey;
+  color: $specialdarkgrey;
   display: inline-block;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-right: 22px;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .copyright__logo-link {
   display: block;
+}
+
+.copyright__logo-icon {
+  fill: #666666;
+}
+
+.copyright__logo-link:hover .copyright__logo-icon {
+  fill: $basicgreen;
+}
+
+.copyright__logo-link:active .copyright__logo-icon {
+  fill: rgba(104, 183, 56, 0.3);
 }
