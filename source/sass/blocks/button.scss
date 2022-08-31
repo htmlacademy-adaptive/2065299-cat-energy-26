@@ -1,29 +1,15 @@
 .button {
   @include oswald-reg;
   display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   background-color: $basicgreen;
-  padding: 14px 26px;
+  padding: 10px 10px;
   border: none;
-
-  &--show-all {
-    background-color: $basicgrey;
-    color: $special-dark-grey;
-
-    &:hover {
-      background-color: #ebebeb;
-    }
-
-    &:active {
-      background-color: #ebebeb;
-      color: rgba($color: $special-dark-grey, $alpha: 0.3);
-    }
-  }
 
   &:hover {
     background-color: #5eaa2f;
@@ -31,11 +17,42 @@
 
   &:active {
     background-color: #5eaa2f;
-    color: rgba($color: #ffffff, $alpha: 0.3);
+    color: rgba($color: $white, $alpha: 0.3);
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.button--choose-program {
+  padding: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
+}
+
+.button--add {
+  padding: 7px;
+  line-height: 26px;
+}
+
+.button--show-all {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basicgrey;
+  color: $specialdarkgrey;
+  width: 100%;
+  padding: 10px 10px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba($color: $specialdarkgrey, $alpha: 0.3);
   }
 }

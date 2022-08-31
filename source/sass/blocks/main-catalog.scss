@@ -6,6 +6,10 @@
   margin-bottom: 35px;
 }
 
+.main-catalog__basic-catalog {
+  margin-bottom: 25px;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-catalog__title-wrapper {
     border-bottom: 1px solid #ebebeb;
@@ -17,8 +21,6 @@
     width: 320px;
     padding: 0 20px;
     margin: 0 auto;
-    margin-top: 27px;
-    margin-bottom: 41px;
   }
 }
 
@@ -37,6 +39,10 @@
   .main-catalog__add-catalog {
     margin-bottom: 76px;
   }
+
+  .main-catalog__basic-catalog {
+    margin-bottom: 68px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -53,5 +59,9 @@
 
   .main-catalog__add-catalog {
     margin-bottom: 86px;
+  }
+
+  .main-catalog__basic-catalog {
+    margin-bottom: 76px;
   }
 }

@@ -57,21 +57,21 @@
 
   &--index-active {
     @media (min-width: $desktop-width) {
-      border-color: #ffffff;
+      border-color: $white;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__link--index {
-    color: #ffffff;
+    color: $white;
 
     &:hover {
-      color: rgba($color: #ffffff, $alpha: 0.6);
+      color: rgba($color: $white, $alpha: 0.6);
     }
 
     &:active {
-      color: rgba($color: #ffffff, $alpha: 0.3);
+      color: rgba($color: $white, $alpha: 0.3);
     }
   }
 }
@@ -107,7 +107,7 @@
       left: 0;
       top: 66px;
       z-index: 1;
-      background-color: #ffffff;
+      background-color: $white;
       width: 100%;
     }
 
