@@ -1,5 +1,7 @@
 .product-card__link-img {
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .product-card__link-title {
@@ -38,6 +40,10 @@
   margin-right: 15px;
 }
 
+.product-card__img {
+  display: block;
+}
+
 @media (max-width: $mobile-width-only) {
   .product-card {
     display: grid;
@@ -47,6 +53,23 @@
   .product-card__button {
     grid-column: 1/-1;
     margin-top: 13px;
+  }
+
+  .product-card__text-wrapper {
+    min-height: 112px;
+  }
+
+  .product-card__link-img--chicken500 {
+    padding-bottom: 12px;
+  }
+
+  .product-card__link-img--fish500 {
+    padding-bottom: 7px;
+  }
+
+  .product-card__link-img--buckweat500,
+  .product-card__link-img--rice500 {
+    padding-bottom: 4px;
   }
 }
 
@@ -70,6 +93,14 @@
   .product-card__link-img {
     align-self: center;
     margin-bottom: 34px;
+
+    &--big {
+      margin-top: -73px;
+    }
+
+    &--small {
+      margin-top: -47px;
+    }
   }
 
   .product-card__text-wrapper {
@@ -94,6 +125,25 @@
     padding-bottom: 9px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  .product-card__img {
+    &--big {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--chicken500,
+    &--buckweat500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--fish500,
+    &--rice500 {
+      width: 163px;
+      height: 174px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -107,7 +157,15 @@
   }
 
   .product-card__link-img {
-    margin-bottom: 46px;
+    &--big {
+      margin-bottom: 46px;
+      margin-top: -80px;
+    }
+
+    &--small {
+      margin-bottom: 42px;
+      margin-top: -52px;
+    }
   }
 
   .product-card__link-title {
@@ -117,5 +175,12 @@
   .product-card__description-item {
     padding-top: 6px;
     padding-bottom: 10px;
+  }
+
+  .product-card__img {
+    &--big {
+      width: 172px;
+      height: 196px;
+    }
   }
 }
