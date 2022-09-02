@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 24px 30px 34px;
     width: 768px;
     margin: 0 auto;
@@ -37,6 +38,16 @@
 
 .main-header__logo-img {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .main-header__toggle {

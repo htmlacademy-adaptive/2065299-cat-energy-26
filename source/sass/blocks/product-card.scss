@@ -177,10 +177,8 @@
     padding-bottom: 10px;
   }
 
-  .product-card__img {
-    &--big {
-      width: 172px;
-      height: 196px;
-    }
+  .product-card__img--big {
+    width: 172px;
+    height: 196px;
   }
 }
