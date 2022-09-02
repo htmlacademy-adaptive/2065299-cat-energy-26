@@ -68,13 +68,27 @@
           </h1>
           <h2 class="hero__title">Функциональное<br />питание для котов</h2>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img
-            class="hero__img"
-            src="img/hero.png"
-            width="280"
-            height="270"
-            alt="Пример питания для котов Кэт энерджи."
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                img/hero/hero-desktop.png    1x,
+                img/hero/hero-desktop@2x.png 2x
+              " />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/hero/hero-tablet.png    1x,
+                img/hero/hero-tablet@2x.png 2x
+              " />
+            <img
+              class="hero__img"
+              src="img/hero/hero-mobile.png"
+              srcset="img/hero/hero-mobile@2x.png 2x"
+              width="280"
+              height="270"
+              alt="Пример питания для котов Кэт энерджи."
+          /></picture>
           <a class="hero__button button button--choose-program" href=""
             >Подобрать программу</a
           >
