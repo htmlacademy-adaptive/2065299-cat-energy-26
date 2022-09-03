@@ -1,3 +1,7 @@
+.cat-slider {
+  position: relative;
+}
+
 .cat-slider__caption {
   @include oswald-reg;
   font-size: 16px;
@@ -7,7 +11,6 @@
 }
 
 .cat-slider__wrapper {
-  position: relative;
   width: 280px;
   margin: 0 auto;
   height: 256px;
@@ -56,9 +59,6 @@
 }
 
 .cat-slider__toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
   width: 4px;
   border-radius: 2px;
@@ -67,18 +67,20 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #666666;
-  z-index: 2;
 }
 
 .cat-slider__range {
-  display: block;
-  box-sizing: border-box;
-  padding: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
   background-color: $white;
   border: 2px solid #666666;
   border-radius: 50%;
   cursor: pointer;
-  position: relative;
 }
 
 .cat-slider__range::before {
@@ -105,6 +107,14 @@
   left: 22px;
 }
 
+.cat-slider__button {
+  position: absolute;
+  height: 512px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .cat-slider__range:hover {
   border-color: $basicgreen;
 }
@@ -117,7 +127,7 @@
   border-right-color: $basicgreen;
 }
 
-.cat-slider__range:hover .cat-slider__toggle {
+.cat-slider__range:hover + .cat-slider__toggle {
   background-color: $basicgreen;
 }
 
@@ -133,6 +143,6 @@
   border-right-color: rgba(94, 170, 47, 0.6);
 }
 
-.cat-slider__range:active .cat-slider__toggle {
+.cat-slider__range:active + .cat-slider__toggle {
   background-color: rgba(94, 170, 47, 0.6);
 }
