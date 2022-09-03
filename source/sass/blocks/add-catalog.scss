@@ -59,21 +59,44 @@
   hsl(97 53% 47% / 85%),
   hsl(97 53% 47% / 85%)
   ),
-    url("../img/background/cat-case.jpg");
+    url("../img/background/gift.jpg");
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    padding: 71px 124px 69px 422px;
+  @media (min-resolution: 2dppx) {
     background-image: linear-gradient(
   hsl(97 53% 47% / 85%),
   hsl(97 53% 47% / 85%)
   ),
-      url("../img/background/gift.jpg");
-    background-repeat: no-repeat;
+      url("../img/background/gift@2x.jpg");
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding: 71px 124px 69px 422px;
+    background-position: 105% 63%;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    hsl(97 53% 47% / 85%),
+    hsl(97 53% 47% / 85%)
+    ),
+        url("../img/background/gift@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 185px 42px 42px 42px;
+    background-position: -35px 100%;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+    hsl(97 53% 47% / 85%),
+    hsl(97 53% 47% / 85%)
+    ),
+        url("../img/background/gift@2x.jpg");
+    }
   }
 }
 
