@@ -109,10 +109,14 @@
 
 .cat-slider__button {
   position: absolute;
-  height: 512px;
+  height: 256px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
 
 .cat-slider__range:hover {
