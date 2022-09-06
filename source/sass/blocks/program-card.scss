@@ -60,8 +60,18 @@
   padding: 4px 49px 4px 0;
   background-image: url("../img/icon/arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 32px 10px;
+  background-position: right 8px center;
+  background-size: 24px 12px;
+
+  &:hover {
+    background-image: url("../img/icon/arrow-right-hover.svg");
+    background-size: 32px 12px;
+    background-position: right center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
