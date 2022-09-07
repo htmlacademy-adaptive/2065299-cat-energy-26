@@ -599,8 +599,16 @@ img {
   padding: 4px 49px 4px 0;
   background-image: url("../img/icon/arrow-right.svg");
   background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 24px 12px;
+}
+.program-card__link:hover {
+  background-image: url("../img/icon/arrow-right-hover.svg");
+  background-size: 32px 12px;
   background-position: right center;
-  background-size: 32px 10px;
+}
+.program-card__link:active {
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .program-card__link {
@@ -631,6 +639,12 @@ img {
     background-image: url("../img/icon/cat-gain.svg");
     background-size: 200px 211px;
     background-position: right 28px top 91px;
+  }
+  .program-card .program-card__title {
+    width: 360px;
+  }
+  .program-card .program-card__description {
+    width: 360px;
   }
 
   .program-card__title {
@@ -1269,7 +1283,7 @@ img {
   z-index: -1;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media (min-width: 1440px) {
@@ -1405,7 +1419,6 @@ img {
 }
 @media (min-width: 768px) {
   .copyright__link {
-    font-size: 18px;
     margin-right: 22px;
   }
 }
@@ -2033,11 +2046,13 @@ img {
   text-transform: uppercase;
   color: #222222;
   margin: 0;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .add-product__title {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -2046,6 +2061,12 @@ img {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
+}
+@media (min-width: 1440px) {
+  .add-product__description {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1440px) {
   .add-product__description {
@@ -2065,6 +2086,7 @@ img {
 
 .add-product__count {
   line-height: 20px;
+  margin-right: 15px;
 }
 @media (min-width: 768px) {
   .add-product__count {
@@ -2072,6 +2094,17 @@ img {
   }
 }
 
+.add-product__price {
+  margin: 0;
+  min-width: 40px;
+}
+
+@media (min-width: 1440px) {
+  .add-product__title,
+.add-product__description {
+    max-width: 245px;
+  }
+}
 .main-form__contacts {
   background-color: #f2f2f2;
 }
