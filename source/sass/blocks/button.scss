@@ -27,7 +27,9 @@
 }
 
 .button--choose-program {
-  padding: 7px;
+  padding: 11px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
