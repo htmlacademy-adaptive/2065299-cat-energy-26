@@ -22,9 +22,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     width: 155px;
-  }
-
-  @media (min-width: $desktop-width) {
     text-align: right;
   }
 }
@@ -49,7 +46,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 768px;
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 }
 

@@ -14,15 +14,12 @@
 }
 
 .social__item {
-  margin-right: 24px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin-left: 24px;
 }
 
 .social__icon {
   fill: #666666;
+  display: block;
 }
 
 .social__link:hover .social__icon {
