@@ -1,5 +1,5 @@
 .program-select {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -99,7 +99,7 @@
 
 .program-select__button-wrapper {
   display: grid;
-  gap: 28px;
+  gap: 21px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -205,7 +205,7 @@
 
 .program-select__form-group--comment {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $tablet-width) {

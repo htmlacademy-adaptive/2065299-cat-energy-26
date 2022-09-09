@@ -1,7 +1,6 @@
 .info-form {
   display: grid;
   gap: 13px;
-  grid-auto-rows: min-content;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
@@ -46,7 +45,7 @@
   text-transform: uppercase;
   flex-grow: 1;
   border: 1px solid #e7e7e7;
-  padding: 13px 43px 14px 16px;
+  padding: 12px 43px 13px 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
