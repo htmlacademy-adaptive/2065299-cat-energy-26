@@ -142,23 +142,28 @@
 
 @media (min-width: $desktop-width) {
   .program-card {
-    padding: 41px 51px  55px 52px;
+    padding: 41px 51px  54px 52px;
+  }
+
+  .program-card--weight-gain {
+    padding-top: 47px;
   }
 
   .program-card__title {
     margin: 0;
-    margin-bottom: 39px;
     background-repeat: no-repeat;
     background-position: left top;
 
     &--slim {
-      padding: 40px 0 34px 162px;
+      padding: 38px 0 36px 162px;
+      margin-bottom: 37px;
       background-image: url("../img/icon/cat-slim.svg");
       background-size: 100px 106px;
     }
 
     &--weight-gain {
-      padding: 36px 0 36px 181px;
+      padding: 33px 0 39px 181px;
+      margin-bottom: 33px;
       background-image: url("../img/icon/cat-gain.svg");
       background-size: 134px 100px;
       margin-left: -19px;

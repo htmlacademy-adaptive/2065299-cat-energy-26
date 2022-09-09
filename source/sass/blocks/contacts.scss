@@ -24,6 +24,10 @@
     width: 155px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 @media (min-width: $tablet-width) {
