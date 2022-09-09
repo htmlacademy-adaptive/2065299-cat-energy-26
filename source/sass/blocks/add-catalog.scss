@@ -32,6 +32,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+
+    &::after {
+      top: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +48,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +117,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     top: 57px;
-    left: 77px;
+    left: 120px;
     width: 80px;
     height: 83px;
   }
@@ -134,12 +138,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .add-catalog__list {
-    margin-bottom: 69px;
-  }
-
   .add-catalog__title {
     width: 708px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .add-catalog__title-line {
@@ -150,7 +152,7 @@
     display: block;
     content: "";
     position: absolute;
-    top: 16px;
+    top: 20px;
     left: 0;
     height: 2px;
     background-color: $basicgreen;

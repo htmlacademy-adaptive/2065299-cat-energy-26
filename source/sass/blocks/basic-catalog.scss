@@ -12,7 +12,7 @@
   .basic-catalog__card-wrapper {
     border-bottom: 1px solid #ebebeb;
     padding-top: 19px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 
     &--show-all {
       padding-top: 25px;
@@ -25,7 +25,6 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
-    margin-bottom: 68px;
     grid-template-columns: 324px 324px;
     gap: 141px 60px;
   }
@@ -35,7 +34,6 @@
   .basic-catalog__list {
     width: 1440px;
     padding: 0 110px;
-    margin-bottom: 76px;
     grid-template-columns: 245px 245px 245px 245px;
     gap: 143px 80px;
   }
@@ -138,6 +136,6 @@
 @media (min-width: $desktop-width) {
   .basic-catalog__item--show-all {
     width: 245px;
-    padding: 160px 39px 41px 39px;
+    padding: 161px 37px 41px 37px;
   }
 }
