@@ -7,7 +7,7 @@
 .product-card__link-title {
   display: block;
   text-decoration: none;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .product-card__title {
@@ -149,11 +149,15 @@
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
-    padding: 0 30px 40px 35px;
+    padding: 0 37px 40px 40px;
   }
 
   .product-card__title {
     line-height: 21px;
+  }
+
+  .product-card__description {
+    margin-bottom: 29px;
   }
 
   .product-card__link-img {
@@ -169,7 +173,7 @@
   }
 
   .product-card__link-title {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .product-card__description-item {

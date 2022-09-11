@@ -15,7 +15,7 @@
   background-position: left top;
 
   &--slim {
-    padding: 11px 0 7px 69px;
+    padding: 9px 0 9px 69px;
     background-image: url("../img/icon/cat-slim.svg");
     background-size: 50px 53px;
   }
@@ -34,7 +34,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding-right: 13px;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     border-bottom: 1px solid #d9d9d9;
 
     br {
@@ -99,12 +99,16 @@
 
     &--weight-gain {
       background-image: url("../img/icon/cat-gain.svg");
-      background-size: 200px 211px;
+      background-size: 268px 200px;
       background-position: right 28px top 91px;
     }
 
     .program-card__title {
       width: 360px;
+
+      &--weight-gain {
+        margin-left: 0;
+      }
     }
 
     .program-card__description {
@@ -138,23 +142,28 @@
 
 @media (min-width: $desktop-width) {
   .program-card {
-    padding: 41px 51px  55px 52px;
+    padding: 41px 51px  54px 52px;
+  }
+
+  .program-card--weight-gain {
+    padding-top: 47px;
   }
 
   .program-card__title {
     margin: 0;
-    margin-bottom: 39px;
     background-repeat: no-repeat;
     background-position: left top;
 
     &--slim {
-      padding: 40px 0 34px 162px;
+      padding: 38px 0 36px 162px;
+      margin-bottom: 37px;
       background-image: url("../img/icon/cat-slim.svg");
       background-size: 100px 106px;
     }
 
     &--weight-gain {
-      padding: 36px 0 36px 181px;
+      padding: 33px 0 39px 181px;
+      margin-bottom: 33px;
       background-image: url("../img/icon/cat-gain.svg");
       background-size: 134px 100px;
       margin-left: -19px;

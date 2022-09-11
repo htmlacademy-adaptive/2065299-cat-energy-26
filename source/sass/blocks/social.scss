@@ -2,7 +2,7 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 20px 0 18px;
 
   @media (min-width: $tablet-width) {
     padding: 4px 0 8px;
@@ -16,6 +16,11 @@
 .social__item {
   margin-right: 24px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 24px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -23,6 +28,7 @@
 
 .social__icon {
   fill: #666666;
+  display: block;
 }
 
 .social__link:hover .social__icon {

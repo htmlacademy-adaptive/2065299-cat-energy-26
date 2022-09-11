@@ -12,7 +12,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     background-color: #eaeaea;
-    background-image: linear-gradient($white 22.7%, #eaeaea 22.7%);
+    background-image: linear-gradient($white 22.4%, #eaeaea 22.4%);
   }
 }
 
@@ -45,30 +45,35 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    br {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+    margin-bottom: 69px;
+  }
 }
 
 .example__results {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    margin-bottom: 87px;
+    margin-bottom: 20px;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
   }
 }
 
@@ -76,6 +81,8 @@
   .example__results-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 77px;
   }
 }
 
@@ -97,9 +104,8 @@
     font-size: 30px;
     line-height: 37px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     min-width: 162px;
-    min-height: 77px;
   }
 }
 
@@ -129,6 +135,8 @@
     padding: 0 7px;
     background-color: $white;
     margin-top: -7px;
+    font-size: 14px;
+    line-height: 14px;
 
     br {
       display: none;
@@ -142,12 +150,12 @@
 
 .example__cost {
   @include oswald-reg;
-  line-height: 20px;
+  line-height: 2px;
   color: $black;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -156,8 +164,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 2px;
     font-size: 20px;
     text-align: right;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -200,7 +210,7 @@
 @media (min-width: $desktop-width) {
   .example__text-wrapper {
     padding-right: 224px;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
   }
 }
 
@@ -208,6 +218,6 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     padding-bottom: 101px;
     background-color: #eaeaea;
-    background-image: linear-gradient($white 25.44%, #eaeaea 25.44%);
+    background-image: linear-gradient($white 24.9%, #eaeaea 24.9%);
   }
 }

@@ -24,12 +24,12 @@
 
 
 .hero__wrapper {
-  padding: 25px 20px 0 20px;
+  padding: 27px 20px 0 20px;
   width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 526px 120px;
+    padding: 30px 30px 526px 118px;
     width: 768px;
   }
 
@@ -68,6 +68,7 @@
   color: $white;
   margin: 0;
   margin-bottom: 29px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -84,6 +85,7 @@
 
 .hero__img {
   display: block;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

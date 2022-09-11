@@ -45,7 +45,7 @@
         class="main-header__main-nav main-nav main-nav--closed main-nav--nojs"
       >
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
@@ -53,7 +53,7 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active"
-              >Подобрать программу</a
+              >Подбор программы</a
             >
           </li>
         </ul>
@@ -100,7 +100,9 @@
                     required
                 /></label>
                 <label class="info-form__control">
-                  <span class="info-form__control-label">Возраст (лет):</span>
+                  <span class="info-form__control-label"
+                    >Возраст&nbsp;(лет):</span
+                  >
                   <!--модификатор error для ошибки при вводе-->
                   <input
                     class="info-form__input"
@@ -281,7 +283,7 @@
                   placeholder="Расскажите обо всех повАдках кота"
                   id="comment"
                   name="comment"
-                  rows="5"
+                  rows="7"
                 ></textarea>
               </div>
             </div>
@@ -359,7 +361,10 @@
             </div>
           </fieldset>
           <div class="program-select__button-wrapper container-form">
-            <button class="program-select__button button" type="submit">
+            <button
+              class="program-select__button button button--form"
+              type="submit"
+            >
               отправить заявку
             </button>
             <p class="program-select__form-hint">* — Обязательные поля</p>
@@ -370,10 +375,11 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__deals-offer">
-            приглашаем к сотрудничеству дилеров!
+            приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__town">Санкт-Петербург</span>
           </address>
         </div>
         <div class="contacts__map map">
@@ -398,7 +404,7 @@
             class="main-footer__logo-caption"
             src="img/logo/logo-cat-caption.svg"
             width="128"
-            height="18"
+            height="24"
             alt="Кэт энерджи."
           />
         </a>
