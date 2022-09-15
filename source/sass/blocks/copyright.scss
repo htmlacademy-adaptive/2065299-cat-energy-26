@@ -29,14 +29,14 @@
 }
 
 .copyright__logo-icon {
-  fill: #666666;
+  color: #666666;
   display: block;
 }
 
 .copyright__logo-link:hover .copyright__logo-icon {
-  fill: $basicgreen;
+  color: $basicgreen;
 }
 
 .copyright__logo-link:active .copyright__logo-icon {
-  fill: rgba(104, 183, 56, 0.3);
+  color: rgba(104, 183, 56, 0.3);
 }
