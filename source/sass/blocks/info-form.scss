@@ -123,6 +123,7 @@
 }
 
 .info-form__input:focus-visible {
+  outline: none;
   border: 2px solid $specialdarkgrey;
   padding: 12px 42px 13px 15px;
 
