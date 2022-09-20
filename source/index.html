@@ -9,6 +9,20 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body page__body--index">
     <header class="main-header">
@@ -113,7 +127,7 @@
               height="270"
               alt="Пример питания для котов Кэт энерджи."
           /></picture>
-          <a class="hero__button button button--choose-program" href=""
+          <a class="hero__button button button--choose-program" href="form.html"
             >Подобрать программу</a
           >
         </div>
@@ -214,6 +228,19 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/slider/before-tablet.webp    1x,
+                      img/slider/before-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/slider/before-mobile.webp    1x,
+                      img/slider/before-mobile@2x.webp 2x
+                    " />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/slider/before-tablet.png    1x,
@@ -232,6 +259,19 @@
                 class="cat-slider__photo-wrapper cat-slider__photo-wrapper--after"
               >
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/slider/after-tablet.webp    1x,
+                      img/slider/after-tablet@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/slider/after-mobile.webp    1x,
+                      img/slider/after-mobile@2x.webp 2x
+                    " />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -283,6 +323,26 @@
             Конюшенная, д. 19/8, Санкт-Петербург"
           ></iframe>
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/background/map-desktop.webp    1x,
+                img/background/map-desktop@2x.webp 2x
+              " />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/background/map-tablet.webp    1x,
+                img/background/map-tablet@2x.webp 2x
+              " />
+            <source
+              type="image/webp"
+              srcset="
+                img/background/map-mobile.webp    1x,
+                img/background/map-mobile@2x.webp 2x
+              " />
             <source
               media="(min-width: 1440px)"
               srcset="
